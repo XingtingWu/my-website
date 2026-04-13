@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xingting Wu 吴星婷</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --text: #1a1a1a;
+    --muted: #666;
+    --light: #999;
+    --bg: #fafaf8;
+    --border: #e8e5e0;
+    --accent: #8a6f5e;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--bg);
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* NAV */
+  header {
+    padding: 36px 0 0;
+    margin-bottom: 60px;
+  }
+  .site-title {
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 16px;
+  }
+  nav {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  nav a {
+    font-size: 13.5px;
+    color: var(--muted);
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    transition: color 0.2s;
+    padding-bottom: 1px;
+  }
+  nav a:hover, nav a.active {
+    color: var(--text);
+    border-bottom: 1px solid var(--text);
+  }
+
+  /* MAIN CONTENT — two column on home */
+  .home-layout {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 60px;
+    align-items: start;
+  }
+
+  /* LEFT: intro */
+  .intro h1 {
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+  .intro h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+  .intro p {
+    color: var(--muted);
+    margin-bottom: 14px;
+    font-size: 15px;
+  }
+  .intro p strong {
+    color: var(--text);
+    font-weight: 500;
+  }
+  .emoji-list {
+    margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .emoji-item {
+    display: flex;
+    gap: 12px;
+    font-size: 14.5px;
+    color: var(--muted);
+  }
+  .emoji-item .emoji { flex-shrink: 0; }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 36px 0;
+  }
+
+  /* SECTIONS */
+  h2 {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--text);
+  }
+  h3 {
+    font-size: 13.5px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-bottom: 16px;
+  }
+
+  /* NEWS */
+  .news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .news-item {
+    font-size: 14.5px;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+  .news-date {
+    font-weight: 500;
+    color: var(--text);
+    font-size: 13px;
+  }
+
+  /* RESEARCH */
+  .paper-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .paper {
+    border-left: 2px solid var(--border);
+    padding-left: 16px;
+  }
+  .paper:hover { border-left-color: var(--accent); }
+  .paper-title {
+    font-size: 14.5px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 4px;
+    line-height: 1.5;
+  }
+  .paper-meta {
+    font-size: 13px;
+    color: var(--light);
+    margin-bottom: 6px;
+  }
+  .paper-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .ptag {
+    font-size: 11.5px;
+    padding: 2px 8px;
+    background: var(--border);
+    color: var(--muted);
+    border-radius: 2px;
+  }
+
+  /* ILLUSTRATION GALLERY */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .gallery-item {
+    aspect-ratio: 1;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+  }
+  .gallery-thumb {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s;
+  }
+  .gallery-item:hover .gallery-thumb { opacity: 0.85; }
+  .gallery-caption {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: rgba(26,26,26,0.75);
+    color: #fff;
+    font-size: 11.5px;
+    padding: 5px 9px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .gallery-item:hover .gallery-caption { opacity: 1; }
+  /* Color placeholders */
+  .c1 { background: #d4cfc8; }
+  .c2 { background: #c8b9a8; }
+  .c3 { background: #b8c8b0; }
+  .c4 { background: #cfc4b8; }
+  .c5 { background: #b8c0c8; }
+  .c6 { background: #d0b8b0; }
+  .thumb-label {
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Lora', serif;
+    font-size: 22px;
+    color: rgba(60,50,40,0.25);
+    font-style: italic;
+  }
+
+  /* PHOTO */
+  .photo-col {
+    position: sticky;
+    top: 40px;
+  }
+  .profile-photo {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    background: linear-gradient(160deg, #d8d0c8 0%, #c4b8a8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  .photo-placeholder-text {
+    font-family: 'Lora', serif;
+    font-size: 48px;
+    color: rgba(255,255,255,0.5);
+    font-style: italic;
+  }
+  .photo-caption {
+    font-size: 12px;
+    color: var(--light);
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* CONTACT */
+  .contact-block {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 2;
+  }
+  .contact-block a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .contact-block a:hover { text-decoration: underline; }
+
+  /* PAGE SECTIONS (shown/hidden by JS) */
+  .page { display: none; }
+  .page.active { display: block; }
+
+  /* FOOTER */
+  footer {
+    margin: 80px 0 40px;
+    font-size: 12px;
+    color: var(--light);
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+  }
+
+  @media (max-width: 600px) {
+    .home-layout { grid-template-columns: 1fr; }
+    .photo-col { position: static; order: -1; }
+    .profile-photo { aspect-ratio: 1; max-height: 200px; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="#" class="site-title" onclick="showPage('home')">Xingting Wu 吴星婷</a>
+  <nav>
+    <a href="#" class="active" id="nav-home" onclick="showPage('home')">Home</a>
+    <a href="#" id="nav-news" onclick="showPage('news')">News</a>
+    <a href="#" id="nav-research" onclick="showPage('research')">Research</a>
+    <a href="#" id="nav-art" onclick="showPage('art')">Illustration</a>
+    <a href="#" id="nav-contact" onclick="showPage('contact')">Contact</a>
+  </nav>
+</header>
+
+<!-- ===== HOME ===== -->
+<div id="page-home" class="page active">
+  <div class="home-layout">
+    <div class="intro">
+      <h1>Hi, I'm Xingting.<br><em>Designer, researcher,<br>and illustrator.</em></h1>
+      <p>
+        I'm a <strong>PhD candidate</strong> at the School of Design and Architecture,
+        Swinburne University of Technology (Melbourne), supervised by
+        Professor Sonja Pedell.
+      </p>
+      <p>
+        My research focuses on <strong>participatory design with older adults</strong>
+        in residential aged care — exploring crafting, gardening, and outdoor
+        ecological discovery as pathways to wellbeing and connection.
+      </p>
+
+      <div class="emoji-list">
+        <div class="emoji-item"><span class="emoji">🌿</span><span>Researching how older adults engage with nature, technology, and creative practice in aged care settings.</span></div>
+        <div class="emoji-item"><span class="emoji">✏️</span><span>Running mobile drawing lessons around Melbourne; making hand-drawn maps and character illustrations on the side.</span></div>
+        <div class="emoji-item"><span class="emoji">🤖</span><span>Curious about speculative design, design fiction, and how AI changes design pedagogy.</span></div>
+        <div class="emoji-item"><span class="emoji">📮</span><span>Sharing academic notes and art on <a href="#" style="color:var(--accent);">小红书 Xiaohongshu</a>.</span></div>
+      </div>
+
+      <hr>
+
+      <h3>Latest News</h3>
+      <div class="news-list">
+        <div class="news-item">
+          <div class="news-date">Apr 2026</div>
+          Revising <em>Teaching Beyond the Tool Metaphor</em> — targeting Humanities &amp; Social Sciences Communications (submission Sept 2026).
+        </div>
+        <div class="news-item">
+          <div class="news-date">Mar 2026</div>
+          Paper accepted: <em>Warm Steward: Intergenerational GenAI Learning in Chinese Families</em> (IJHCI, manuscript HIHC-8-2025-6074.R1). 🎉
+        </div>
+        <div class="news-item">
+          <div class="news-date">Feb 2026</div>
+          Volunteering with ACVVS (Aged Care Visiting Volunteers Service) in Melbourne — exploring autoethnographic research directions from this experience.
+        </div>
+        <div class="news-item">
+          <div class="news-date">Jan 2026</div>
+          Peer reviewing for a pedestrian trust / FAV study (PLS-SEM + fsQCA) and an employee performance paper (ANT + longitudinal design).
+        </div>
+        <div class="news-item" style="color:var(--light); font-size:13px;">
+          <a href="#" onclick="showPage('news')" style="color:var(--accent); text-decoration:none;">... older entries →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: photo -->
+    <div class="photo-col">
+      <div class="profile-photo">
+        <div class="photo-placeholder-text">XW</div>
+      </div>
+      <div class="photo-caption">Melbourne, 2025</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== NEWS ===== -->
+<div id="page-news" class="page">
+  <h2>News</h2>
+  <div class="news-list">
+    <div class="news-item"><div class="news-date">Apr 2026</div>Revising <em>Teaching Beyond the Tool Metaphor</em> for Humanities &amp; Social Sciences Communications special collection "Art and Design in the Age of AI".</div>
+    <div class="news-item"><div class="news-date">Mar 2026</div><em>Warm Steward</em> paper accepted at IJHCI. Corresponding with production editor on LaTeX formatting and author contributions.</div>
+    <div class="news-item"><div class="news-date">Feb 2026</div>Volunteering with ACVVS; exploring autoethnographic research potential from the experience.</div>
+    <div class="news-item"><div class="news-date">Jan 2026</div>Completed peer review for <em>MinArt AI</em> learning assistant paper (PLS-SEM + ANN + NCA).</div>
+    <div class="news-item"><div class="news-date">Dec 2025</div>Study 3 thesis writing underway (Martin Luther Homes / Hedwig House outdoor ecological discovery). Materials described: garden map, nature cards, birdsong iPad, preference-ranking booklet.</div>
+    <div class="news-item"><div class="news-date">Nov 2025</div>Produced Xiaohongshu academic content cards (warm aesthetic) for Grant &amp; Booth (2009) and Mulhall (2003).</div>
+    <div class="news-item"><div class="news-date">Oct 2025</div>Started mobile art teaching venture in Melbourne — drawing lessons for adults and children.</div>
+  </div>
+</div>
+
+<!-- ===== RESEARCH ===== -->
+<div id="page-research" class="page">
+  <h2>Research</h2>
+  <p style="color:var(--muted); margin-bottom:32px; font-size:14px;">
+    My work sits at the intersection of <strong>participatory design</strong>, <strong>human-AI interaction</strong>, and <strong>design education</strong>. I work with older adults, design students, and families navigating technology together.
+  </p>
+  <div class="paper-list">
+    <div class="paper">
+      <div class="paper-title">Warm Steward: Intergenerational GenAI Learning in Chinese Families</div>
+      <div class="paper-meta">International Journal of Human–Computer Interaction · 2026 · Accepted</div>
+      <div class="paper-tags"><span class="ptag">GenAI</span><span class="ptag">Family</span><span class="ptag">Thematic Analysis</span><span class="ptag">CASA Theory</span></div>
+    </div>
+    <div class="paper">
+      <div class="paper-title">Teaching Beyond the Tool Metaphor: Speculative Design Pedagogy in the Age of AI</div>
+      <div class="paper-meta">Humanities & Social Sciences Communications · In preparation · Target Sept 2026</div>
+      <div class="paper-tags"><span class="ptag">Speculative Design</span><span class="ptag">Design Fiction</span><span class="ptag">Pedagogy</span><span class="ptag">Reflexive TA</span></div>
+    </div>
+    <div class="paper">
+      <div class="paper-title">MinArt AI: A GenAI-Powered Learning Assistant for Art Design Students</div>
+      <div class="paper-meta">Education and Information Technologies · Under review</div>
+      <div class="paper-tags"><span class="ptag">AI Education</span><span class="ptag">PLS-SEM</span><span class="ptag">ANN</span><span class="ptag">NCA</span></div>
+    </div>
+    <div class="paper">
+      <div class="paper-title">Participatory Design with Older Adults in Residential Aged Care: Crafting, Gardening, and Outdoor Ecological Discovery</div>
+      <div class="paper-meta">PhD Thesis · Swinburne University of Technology · In progress</div>
+      <div class="paper-tags"><span class="ptag">Participatory Design</span><span class="ptag">Aged Care</span><span class="ptag">Study 1–3</span></div>
+    </div>
+    <div class="paper">
+      <div class="paper-title">Pedestrian Trust in Fully Autonomous Vehicles</div>
+      <div class="paper-meta">Under review · PLS-SEM + fsQCA · VR experiment</div>
+      <div class="paper-tags"><span class="ptag">FAV</span><span class="ptag">Trust</span><span class="ptag">fsQCA</span><span class="ptag">Human Factors</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ILLUSTRATION ===== -->
+<div id="page-art" class="page">
+  <h2>Illustration &amp; Art</h2>
+  <p style="color:var(--muted); margin-bottom:24px; font-size:14px;">
+    Alongside research, I maintain a drawing practice — hand-drawn maps, character design (人设), botanical and nature illustration, and editorial work. I also run mobile drawing lessons in Melbourne.
+  </p>
+  <div class="gallery-grid" style="margin-bottom:32px;">
+    <div class="gallery-item"><div class="gallery-thumb c1"><div class="thumb-label">地图</div></div><div class="gallery-caption">Hand-Drawn Maps</div></div>
+    <div class="gallery-item"><div class="gallery-thumb c2"><div class="thumb-label">人设</div></div><div class="gallery-caption">Character Design</div></div>
+    <div class="gallery-item"><div class="gallery-thumb c3"><div class="thumb-label">植物</div></div><div class="gallery-caption">Botanical</div></div>
+    <div class="gallery-item"><div class="gallery-thumb c4"><div class="thumb-label">园艺</div></div><div class="gallery-caption">Garden & Nature</div></div>
+    <div class="gallery-item"><div class="gallery-thumb c5"><div class="thumb-label">插画</div></div><div class="gallery-caption">Editorial</div></div>
+    <div class="gallery-item"><div class="gallery-thumb c6"><div class="thumb-label">课程</div></div><div class="gallery-caption">Drawing Lessons</div></div>
+  </div>
+  <p style="font-size:13.5px; color:var(--muted);">
+    More on <a href="#" style="color:var(--accent);">小红书 Xiaohongshu →</a>
+  </p>
+</div>
+
+<!-- ===== CONTACT ===== -->
+<div id="page-contact" class="page">
+  <h2>Contact</h2>
+  <p style="color:var(--muted); margin-bottom:28px; font-size:14.5px;">
+    I'm open to research collaborations, peer review invitations, illustration commissions, and drawing lesson enquiries in Melbourne.
+  </p>
+  <div class="contact-block">
+    <div>📧 Academic · <a href="#">xwu@swin.edu.au</a></div>
+    <div>🏛 Swinburne University of Technology, Melbourne</div>
+    <div>🏛 Hunan Agricultural University (Affiliate)</div>
+    <div>📖 <a href="#">Google Scholar</a></div>
+    <div>🔬 <a href="#">ResearchGate</a></div>
+    <div>📮 <a href="#">小红书 Xiaohongshu</a></div>
+  </div>
+  <hr>
+  <p style="font-size:13.5px; color:var(--muted);">
+    Supervised by <a href="#" style="color:var(--accent);">Prof. Sonja Pedell</a> · 
+    Working with Prof. Leon Sterling &amp; Dr. Diego Munoz Saez ·
+    Supported by ARC full scholarship
+  </p>
+</div>
+
+<footer>
+  © 2025 Xingting Wu · Melbourne &amp; Changsha · 设计 · 研究 · 艺术
+</footer>
+
+<script>
+  function showPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+    document.getElementById('page-' + id).classList.add('active');
+    document.getElementById('nav-' + id).classList.add('active');
+    // update border-bottom styling for active
+    document.querySelectorAll('nav a').forEach(a => {
+      a.style.borderBottom = '';
+    });
+    const active = document.getElementById('nav-' + id);
+    if (active) {
+      active.style.borderBottom = '1px solid #1a1a1a';
+      active.style.color = '#1a1a1a';
+    }
+    return false;
+  }
+</script>
+</body>
+</html>
