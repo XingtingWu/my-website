@@ -1,4 +1,14 @@
 'use strict';
+const visitorMapImage = document.querySelector('#visitor-map-image');
+if (visitorMapImage) {
+  const showMapFailure = () => {
+    visitorMapImage.hidden = true;
+    document.querySelector('#visitor-map-unavailable').hidden = false;
+  };
+  visitorMapImage.addEventListener('error', showMapFailure);
+  if (visitorMapImage.complete && visitorMapImage.naturalWidth === 0) showMapFailure();
+}
+
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#main-nav');
 if (menuButton && navigation) {
