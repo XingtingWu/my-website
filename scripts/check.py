@@ -37,7 +37,7 @@ for filename,page in pages.items():
             if not dest or parsed.fragment not in dest.ids: errors.append(f'{filename}: missing fragment {url}')
         checked+=1
 source=json.loads((ROOT/'data/publications.json').read_text())['publications']
-if len(source)!=18 or pages['publications.html'].articles!=len(source): errors.append('Publication count mismatch')
+if not source or pages['publications.html'].articles!=len(source): errors.append('Publication count mismatch')
 for paper in source:
     if 'pub-'+paper['id'] not in pages['publications.html'].ids: errors.append('Missing publication '+paper['id'])
 assets=list((ROOT/'assets/images').glob('*.webp'))

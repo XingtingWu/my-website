@@ -1,7 +1,21 @@
 {
-  "updated": "2026-09-20",
+  "updated": "2026-10-04",
   "profile_url": "https://scholar.google.com/citations?user=hHaTofQAAAAJ&hl=en",
   "publications": [
+    {
+      "id": "care-robots-filial-responsibility",
+      "title": "Positioning Care Robots Within Filial Responsibility: Perspectives of Chinese Only Children",
+      "authors": "Xingting Wu, Tram Thi Minh Tran, Mengyao Guo",
+      "venue": "Journal of Applied Gerontology · Online first",
+      "year": 2026,
+      "type": "journal",
+      "label": "Journal article",
+      "published_online": "2026-09-28",
+      "doi": "10.1177/07334648261493744",
+      "scholar_url": null,
+      "paper_url": "https://journals.sagepub.com/doi/full/10.1177/07334648261493744",
+      "paper_label": "Read paper"
+    },
     {
       "id": "u-x6o8ySG0sC",
       "title": "Exploring the impact of social robot design characteristics on users’ privacy concerns: Evidence from PLS-SEM and FsQCA",
