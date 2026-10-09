@@ -95,23 +95,11 @@
     1800,
     1013
   ],
-  "craft-paper-together.webp": [
-    1600,
-    1200
-  ],
   "craft-paper-detail.webp": [
     1200,
     1600
   ],
-  "craft-paper-sharing.webp": [
-    1600,
-    1200
-  ],
   "craft-drawing-detail.webp": [
-    1600,
-    1200
-  ],
-  "craft-drawing-together.webp": [
     1600,
     1200
   ],
@@ -131,19 +119,11 @@
     1200,
     1600
   ],
-  "garden-table.webp": [
-    1600,
-    900
-  ],
   "garden-hands.webp": [
     1600,
     1200
   ],
   "garden-conversation.webp": [
-    1600,
-    1200
-  ],
-  "discovery-together.webp": [
     1600,
     1200
   ],
@@ -163,23 +143,11 @@
     1200,
     1600
   ],
-  "craft-paper-together-small.webp": [
-    800,
-    600
-  ],
   "craft-paper-detail-small.webp": [
     600,
     800
   ],
-  "craft-paper-sharing-small.webp": [
-    800,
-    600
-  ],
   "craft-drawing-detail-small.webp": [
-    800,
-    600
-  ],
-  "craft-drawing-together-small.webp": [
     800,
     600
   ],
@@ -199,19 +167,11 @@
     600,
     800
   ],
-  "garden-table-small.webp": [
-    800,
-    450
-  ],
   "garden-hands-small.webp": [
     800,
     600
   ],
   "garden-conversation-small.webp": [
-    800,
-    600
-  ],
-  "discovery-together-small.webp": [
     800,
     600
   ],
@@ -228,6 +188,38 @@
     600
   ],
   "stories-map-detail-small.webp": [
+    600,
+    800
+  ],
+  "craft-cutting-paper.webp": [
+    1200,
+    1600
+  ],
+  "craft-cutting-paper-small.webp": [
+    600,
+    800
+  ],
+  "craft-decorating-figure.webp": [
+    1600,
+    1200
+  ],
+  "craft-decorating-figure-small.webp": [
+    800,
+    600
+  ],
+  "garden-plant-care.webp": [
+    1600,
+    1200
+  ],
+  "garden-plant-care-small.webp": [
+    800,
+    600
+  ],
+  "discovery-booklet-in-use.webp": [
+    1200,
+    1600
+  ],
+  "discovery-booklet-in-use-small.webp": [
     600,
     800
   ]
