@@ -222,5 +222,29 @@
   "discovery-booklet-in-use-small.webp": [
     600,
     800
+  ],
+  "stories-with-residents.webp": [
+    1600,
+    1200
+  ],
+  "stories-with-residents-small.webp": [
+    800,
+    600
+  ],
+  "craft-making-side-by-side.webp": [
+    1200,
+    1600
+  ],
+  "craft-making-side-by-side-small.webp": [
+    600,
+    800
+  ],
+  "craft-workshop-table.webp": [
+    1600,
+    747
+  ],
+  "craft-workshop-table-small.webp": [
+    800,
+    374
   ]
 }
