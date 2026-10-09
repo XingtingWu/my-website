@@ -94,5 +94,157 @@
   "outdoor-map-concept.webp": [
     1800,
     1013
+  ],
+  "craft-paper-detail.webp": [
+    1200,
+    1600
+  ],
+  "craft-drawing-detail.webp": [
+    1600,
+    1200
+  ],
+  "craft-colouring.webp": [
+    1600,
+    1200
+  ],
+  "craft-own-design.webp": [
+    1600,
+    1200
+  ],
+  "craft-garden-placement.webp": [
+    1600,
+    1200
+  ],
+  "craft-garden-encounter.webp": [
+    1200,
+    1600
+  ],
+  "garden-hands.webp": [
+    1600,
+    1200
+  ],
+  "garden-conversation.webp": [
+    1600,
+    1200
+  ],
+  "discovery-cards-in-use.webp": [
+    1600,
+    1200
+  ],
+  "discovery-photo-wall.webp": [
+    1600,
+    1200
+  ],
+  "stories-map-together.webp": [
+    1600,
+    1200
+  ],
+  "stories-map-detail.webp": [
+    1200,
+    1600
+  ],
+  "craft-paper-detail-small.webp": [
+    600,
+    800
+  ],
+  "craft-drawing-detail-small.webp": [
+    800,
+    600
+  ],
+  "craft-colouring-small.webp": [
+    800,
+    600
+  ],
+  "craft-own-design-small.webp": [
+    800,
+    600
+  ],
+  "craft-garden-placement-small.webp": [
+    800,
+    600
+  ],
+  "craft-garden-encounter-small.webp": [
+    600,
+    800
+  ],
+  "garden-hands-small.webp": [
+    800,
+    600
+  ],
+  "garden-conversation-small.webp": [
+    800,
+    600
+  ],
+  "discovery-cards-in-use-small.webp": [
+    800,
+    600
+  ],
+  "discovery-photo-wall-small.webp": [
+    800,
+    600
+  ],
+  "stories-map-together-small.webp": [
+    800,
+    600
+  ],
+  "stories-map-detail-small.webp": [
+    600,
+    800
+  ],
+  "craft-cutting-paper.webp": [
+    1200,
+    1600
+  ],
+  "craft-cutting-paper-small.webp": [
+    600,
+    800
+  ],
+  "craft-decorating-figure.webp": [
+    1600,
+    1200
+  ],
+  "craft-decorating-figure-small.webp": [
+    800,
+    600
+  ],
+  "garden-plant-care.webp": [
+    1600,
+    1200
+  ],
+  "garden-plant-care-small.webp": [
+    800,
+    600
+  ],
+  "discovery-booklet-in-use.webp": [
+    1200,
+    1600
+  ],
+  "discovery-booklet-in-use-small.webp": [
+    600,
+    800
+  ],
+  "stories-with-residents.webp": [
+    1600,
+    1200
+  ],
+  "stories-with-residents-small.webp": [
+    800,
+    600
+  ],
+  "craft-making-side-by-side.webp": [
+    1200,
+    1600
+  ],
+  "craft-making-side-by-side-small.webp": [
+    600,
+    800
+  ],
+  "craft-workshop-table.webp": [
+    1600,
+    747
+  ],
+  "craft-workshop-table-small.webp": [
+    800,
+    374
   ]
 }
