@@ -74,7 +74,7 @@ def write_page(file,title,description,body,active='home'):
 <title>{escape(title)} · Xingting Wu</title><meta name="description" content="{escape(description)}">
 <meta name="theme-color" content="#f7f5ef"><link rel="canonical" href="{canonical}">
 <meta property="og:type" content="website"><meta property="og:title" content="{escape(title)} · Xingting Wu"><meta property="og:description" content="{escape(description)}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="https://www.xingtingwu.com/assets/images/{social_image}.webp">
-<link rel="icon" href="assets/favicon.svg?v=avatar-20261004" type="image/svg+xml"><link rel="stylesheet" href="assets/site.css"><script defer src="assets/site.js"></script>
+<link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48 64x64 128x128"><link rel="icon" href="favicon.png" type="image/png" sizes="128x128"><link rel="stylesheet" href="assets/site.css"><script defer src="assets/site.js"></script>
 <noscript><style>@media(max-width:760px){{.site-header{{position:static}}.header-inner{{height:auto;display:block;padding-block:20px}}.nav{{display:flex;position:static;padding:15px 0 0;flex-direction:row;flex-wrap:wrap;border:0;gap:15px}}.nav .contact-link{{margin:0}}}}</style></noscript>
 </head><body><a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap header-inner"><a class="brand" href="index.html" aria-label="Xingting Wu, home"><span class="brand-mark" aria-hidden="true">xw</span><span>Xingting Wu <span class="chinese" lang="zh">武星廷</span></span></a>
