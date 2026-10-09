@@ -94,5 +94,141 @@
   "outdoor-map-concept.webp": [
     1800,
     1013
+  ],
+  "craft-paper-together.webp": [
+    1600,
+    1200
+  ],
+  "craft-paper-detail.webp": [
+    1200,
+    1600
+  ],
+  "craft-paper-sharing.webp": [
+    1600,
+    1200
+  ],
+  "craft-drawing-detail.webp": [
+    1600,
+    1200
+  ],
+  "craft-drawing-together.webp": [
+    1600,
+    1200
+  ],
+  "craft-colouring.webp": [
+    1600,
+    1200
+  ],
+  "craft-own-design.webp": [
+    1600,
+    1200
+  ],
+  "craft-garden-placement.webp": [
+    1600,
+    1200
+  ],
+  "craft-garden-encounter.webp": [
+    1200,
+    1600
+  ],
+  "garden-table.webp": [
+    1600,
+    900
+  ],
+  "garden-hands.webp": [
+    1600,
+    1200
+  ],
+  "garden-conversation.webp": [
+    1600,
+    1200
+  ],
+  "discovery-together.webp": [
+    1600,
+    1200
+  ],
+  "discovery-cards-in-use.webp": [
+    1600,
+    1200
+  ],
+  "discovery-photo-wall.webp": [
+    1600,
+    1200
+  ],
+  "stories-map-together.webp": [
+    1600,
+    1200
+  ],
+  "stories-map-detail.webp": [
+    1200,
+    1600
+  ],
+  "craft-paper-together-small.webp": [
+    800,
+    600
+  ],
+  "craft-paper-detail-small.webp": [
+    600,
+    800
+  ],
+  "craft-paper-sharing-small.webp": [
+    800,
+    600
+  ],
+  "craft-drawing-detail-small.webp": [
+    800,
+    600
+  ],
+  "craft-drawing-together-small.webp": [
+    800,
+    600
+  ],
+  "craft-colouring-small.webp": [
+    800,
+    600
+  ],
+  "craft-own-design-small.webp": [
+    800,
+    600
+  ],
+  "craft-garden-placement-small.webp": [
+    800,
+    600
+  ],
+  "craft-garden-encounter-small.webp": [
+    600,
+    800
+  ],
+  "garden-table-small.webp": [
+    800,
+    450
+  ],
+  "garden-hands-small.webp": [
+    800,
+    600
+  ],
+  "garden-conversation-small.webp": [
+    800,
+    600
+  ],
+  "discovery-together-small.webp": [
+    800,
+    600
+  ],
+  "discovery-cards-in-use-small.webp": [
+    800,
+    600
+  ],
+  "discovery-photo-wall-small.webp": [
+    800,
+    600
+  ],
+  "stories-map-together-small.webp": [
+    800,
+    600
+  ],
+  "stories-map-detail-small.webp": [
+    600,
+    800
   ]
 }
