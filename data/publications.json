@@ -1,7 +1,21 @@
 {
-  "updated": "2026-10-04",
+  "updated": "2026-10-15",
   "profile_url": "https://scholar.google.com/citations?user=hHaTofQAAAAJ&hl=en",
   "publications": [
+    {
+      "id": "KlAtU1dfN6UC",
+      "title": "From traditional dates to digital swipes: How generational differences shape online dating choices",
+      "authors": "Li Jiang, Xingting Wu",
+      "venue": "Entertainment Computing 59, 101250",
+      "year": 2026,
+      "type": "journal",
+      "label": "Journal article",
+      "published_online": "2026-10-08",
+      "doi": "10.1016/j.entcom.2026.101250",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hHaTofQAAAAJ&citation_for_view=hHaTofQAAAAJ:KlAtU1dfN6UC",
+      "paper_url": "https://www.sciencedirect.com/science/article/pii/S1875952126001722",
+      "paper_label": "Publisher page"
+    },
     {
       "id": "care-robots-filial-responsibility",
       "title": "Positioning Care Robots Within Filial Responsibility: Perspectives of Chinese Only Children",

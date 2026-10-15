@@ -105,7 +105,7 @@ def project_grid(projects=PROJECTS):
 
 def selected():
     rows=''
-    for number, id in enumerate(['care-robots-filial-responsibility','0EnyYjriUFMC','roLk4NBRz8UC'], start=1):
+    for number, id in enumerate(['KlAtU1dfN6UC','care-robots-filial-responsibility','0EnyYjriUFMC','roLk4NBRz8UC'], start=1):
         p=next(x for x in PAPERS if x['id']==id)
         rows+=f'<a class="selected-paper" href="{escape(p["paper_url"])}"><span class="year">{p["year"]} / {number:02d}</span><div><h3>{escape(p["title"])}</h3><p>{escape(p["venue"])}</p></div>{ARROW}</a>'
     return '<div class="selected-list">'+rows+'</div>'

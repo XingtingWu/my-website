@@ -30,9 +30,11 @@ a GitHub Pages project path. Canonical URLs use https://www.xingtingwu.com/.
 
 ## Content and image privacy
 
-The bibliography contains 19 records: the Google Scholar list checked on
+The bibliography contains 20 records: the Google Scholar list checked on
 20 September 2026, plus the Journal of Applied Gerontology article verified
-against the publisher-deposited Crossref record on 4 October 2026. Publication types and preprint links are labelled. The
+on 4 October 2026 and the Entertainment Computing article verified against
+ScienceDirect and Crossref on 15 October 2026. The latter was available online
+on 8 October 2026 and appears in volume 59 (December 2026), article 101250. Publication types and preprint links are labelled. The
 ongoing 2026 project is separate from the three empirical studies in the MCR.
 
 Only metadata-free image derivatives belong in the website. At the site owner’s
