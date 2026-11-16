@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="research-map" viewBox="0 0 680 550" aria-labelledby="landscape-title landscape-desc">
+  <title id="landscape-title">Three connected research interests</title>
+  <desc id="landscape-desc">Three overlapping areas surround Design and Human–Computer Interaction: ageing and everyday care, human–AI interaction, and AI in education and creativity. Each area links to related research.</desc>
+  <style>
+    .research-map text{font-family:'Avenir Next',Avenir,'Trebuchet MS',sans-serif;fill:#303c34;text-anchor:middle}
+    .research-map .map-area{stroke:#b8c5ba;stroke-width:1.1;fill:#eff3ec;fill-opacity:.35;transition:fill-opacity .2s,stroke .2s,stroke-width .2s}
+    .research-map .map-area-ai,.research-map .map-area-learning{fill:#f3f5f1;fill-opacity:.24}
+    .research-map .map-title{font-size:23px;font-weight:500;letter-spacing:-.4px}
+    .research-map .map-note{font-size:12px;fill:#68756b;letter-spacing:.15px}
+    .research-map .map-index{font-size:11px;letter-spacing:1.9px;fill:#66796a}
+    .research-map .map-core-title{font-family:Georgia,'Times New Roman',serif;font-size:32px;letter-spacing:-.9px}
+    .research-map .map-core-note{font-size:11px;fill:#6b776e;letter-spacing:.3px}
+    .research-map .map-icon{fill:none;stroke:#5c7461;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+    .research-map .map-icon-disc{fill:#fff;stroke:#d4ded2;stroke-width:1}
+    .research-map .map-hit{fill:transparent;stroke:transparent;stroke-width:1.5}
+    .research-map .map-link{outline:none}
+    .research-map .map-link:focus-visible .map-hit{stroke:#4c6856}
+    .research-map .map-link:hover .map-title,.research-map .map-link:focus-visible .map-title,.research-map .map-link.is-active .map-title{fill:#345a40}
+    .research-map:has([data-interest="care"]:hover) .map-area-care,.research-map:has([data-interest="care"]:focus-visible) .map-area-care,.research-map .map-area-care.is-active,
+    .research-map:has([data-interest="ai"]:hover) .map-area-ai,.research-map:has([data-interest="ai"]:focus-visible) .map-area-ai,.research-map .map-area-ai.is-active,
+    .research-map:has([data-interest="learning"]:hover) .map-area-learning,.research-map:has([data-interest="learning"]:focus-visible) .map-area-learning,.research-map .map-area-learning.is-active{stroke:#6c866e;stroke-width:1.6;fill-opacity:.72}
+    @media(prefers-reduced-motion:reduce){.research-map .map-area{transition:none}}
+  </style>
+
+  <!-- Three equal lenses share a centre; this is an interests map, not a causal model. -->
+  <circle class="map-area map-area-care" data-interest-area="care" cx="340" cy="176" r="149"/>
+  <circle class="map-area map-area-ai" data-interest-area="ai" cx="223" cy="365" r="149"/>
+  <circle class="map-area map-area-learning" data-interest-area="learning" cx="457" cy="365" r="149"/>
+
+  <circle cx="340" cy="282" r="88" fill="#fff" stroke="#dce3d9" stroke-width=".8"/>
+  <circle cx="340" cy="282" r="80" fill="#fff" stroke="#9bad9d" stroke-width="1.1"/>
+  <text class="map-core-title" x="340" y="269">Design</text>
+  <text class="map-core-title" x="340" y="307">&amp; HCI</text>
+  <text class="map-core-note" x="340" y="332">People &amp; technology</text>
+
+  <a class="map-link" data-interest="care" href="../research.html" aria-label="Explore ageing and everyday care research">
+    <rect class="map-hit" x="221" y="43" width="238" height="145" rx="10"/>
+    <circle class="map-icon-disc" cx="340" cy="76" r="24"/>
+    <g class="map-icon" transform="translate(326 61)">
+      <path d="M14 30V14M14 23C4 23 0 16 1 8c10 0 15 5 13 15ZM14 16C14 7 20 2 28 2c0 10-5 16-14 14Z"/>
+    </g>
+    <text class="map-index" x="340" y="117">01 / DOCTORAL FOCUS</text>
+    <text class="map-title" x="340" y="146">Ageing &amp; everyday care</text>
+    <text class="map-note" x="340" y="170">Participation · Nature · Making</text>
+  </a>
+
+  <a class="map-link" data-interest="ai" href="../publications.html#pub-roLk4NBRz8UC" aria-label="Explore human–AI interaction and co-creation research">
+    <rect class="map-hit" x="93" y="313" width="231" height="173" rx="10"/>
+    <circle class="map-icon-disc" cx="207" cy="344" r="24"/>
+    <g class="map-icon" transform="translate(193 331)">
+      <path d="M0 1h22v16H11l-7 6v-6H0ZM15 22h13V9h-6M28 22v6l-7-6"/>
+      <path d="M6 7h10M6 11h6"/>
+    </g>
+    <text class="map-index" x="207" y="386">02</text>
+    <text class="map-title" x="207" y="416">Human–AI</text>
+    <text class="map-title" x="207" y="444">interaction</text>
+    <text class="map-note" x="207" y="469">Co-creation · Trust · Adoption</text>
+  </a>
+
+  <a class="map-link" data-interest="learning" href="../publications.html#pub-W7OEmFMy1HYC" aria-label="Explore AI in education and creativity research">
+    <rect class="map-hit" x="356" y="313" width="231" height="173" rx="10"/>
+    <circle class="map-icon-disc" cx="473" cy="344" r="24"/>
+    <g class="map-icon" transform="translate(458 331)">
+      <path d="M15 25V3C10 0 5 0 0 2v21c5-2 10-1 15 2 5-3 10-4 15-2V2c-5-2-10-2-15 1ZM5 8l5 1M5 13l5 1M20 9l5-1M20 14l5-1"/>
+    </g>
+    <text class="map-index" x="473" y="386">03</text>
+    <text class="map-title" x="473" y="416">AI in education</text>
+    <text class="map-title" x="473" y="444">&amp; creativity</text>
+    <text class="map-note" x="473" y="469">Learning across generations</text>
+  </a>
+</svg>
