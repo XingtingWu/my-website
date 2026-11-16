@@ -145,6 +145,69 @@ main :is(.profile-role,.profile-affiliation,.pub-authors,.pub-venue,.note,.capti
 .research-landscape .research-map .map-core-title{fill:var(--green)}
 .research-landscape .research-map .map-core-note{fill:#496a58}
 .research-landscape .research-map .map-link:focus-visible .map-hit{stroke:#fff}
+
+/* Interior pages share the same quiet section hierarchy as the homepage. */
+.page-shell{--edge:56px;--band-inset:max(var(--edge),calc((100% - var(--width))/2));display:grid;grid-template-columns:minmax(var(--edge),1fr) minmax(0,var(--width)) minmax(var(--edge),1fr)}
+.page-shell>*{grid-column:2;min-width:0}
+.page-shell>.page-head,.page-shell>.about-layout{grid-column:1/-1;padding:58px var(--band-inset);background:var(--sage)}
+.page-shell>.page-head .lead{font-size:18px;line-height:1.8}
+.page-shell>.research-question{grid-column:1/-1;padding:46px var(--band-inset);background:var(--green);color:#fff}
+.page-shell>.research-question .eyebrow{color:#dce9e1}
+.page-research .page-shell>.section,.page-shell>.research-other,.page-shell>.making-process,.page-shell>.material-library{grid-column:1/-1;padding:64px var(--band-inset);border:0}
+.page-shell>.research-methods,.page-shell>.making-process,.page-shell>.about-leisure,.page-practice .page-shell>#illustration{background:var(--sage)}
+.page-research .page-shell>.note{padding-bottom:40px}
+.page-shell>.project-cover{padding-top:38px}
+.page-shell>.article-layout{padding-top:44px;padding-bottom:40px;gap:48px}
+.article-layout .toc{padding:22px 20px;background:var(--sage);top:96px}
+.article-layout .toc .eyebrow{font-size:10px}
+.article-layout .prose>section{padding:34px 32px;margin:0 0 24px;border-top:1px solid var(--line)}
+.article-layout .prose>section:nth-child(even){background:var(--sage);border-color:transparent}
+.article-layout .prose>section:last-child{margin-bottom:0}
+.article-layout .learning{background:#edf3ee;border:0;border-left:3px solid var(--green);padding:24px 26px}
+.article-layout section:nth-child(even) .learning{background:#fff}
+.page-shell>.next-project{grid-column:1/-1;padding:42px var(--band-inset);margin:0;border:0;background:var(--green);color:#fff}
+.page-shell>.next-project h2{color:#fff}
+.page-shell>.next-project .eyebrow{color:#dce9e1}
+.page-shell>.filters{margin-top:24px;border-top:0;padding-bottom:24px}
+.page-shell>.result-count{margin-bottom:28px}
+.page-shell>.pub-year{grid-column:1/-1;padding:46px var(--band-inset);margin:0;background:#fff}
+.page-shell>.pub-year:nth-of-type(even){background:var(--sage)}
+.pub-year>h2{border:0;padding-top:0;font-size:36px}
+.pub-year .publication:first-child{border-top:0;padding-top:0}
+.pub-year .publication:last-child{padding-bottom:0}
+.page-publications .page-shell>.note{padding-block:30px}
+.page-shell>.making-portraits{margin:0;padding-block:40px 58px}
+.page-shell .making-reflection{background:#fff;border-left:3px solid var(--green)}
+.page-shell .practice-item{background:var(--sage);padding:24px}
+.page-shell .practice-grid{gap:32px}
+.page-shell>.contact-panel{grid-column:1/-1;padding:52px var(--band-inset);margin:0;background:var(--green);color:#e1eee5}
+.page-shell>.contact-panel h2,.page-shell>.contact-panel .email{color:#fff}
+.page-shell>.contact-panel .eyebrow,.page-shell>.contact-panel .note{color:#dce9e1}
+.page-shell>.contact-panel .email{border-color:#89ae99}
+.page-about .visitors{border:0;padding-block:54px}
+.page-privacy .privacy-text{padding-block:42px}
+@media(max-width:1050px){.page-shell{--edge:32px}.page-shell>.article-layout{gap:28px}.article-layout .prose>section{padding:28px 24px}}
+@media(max-width:760px){
+ .page-shell{--edge:20px}
+ .page-shell>.page-head,.page-shell>.about-layout{padding-block:38px}
+ .page-shell>.page-head .lead{font-size:16px}
+ .page-shell>.research-question{padding-block:32px}
+ .page-research .page-shell>.section,.page-shell>.research-other,.page-shell>.making-process,.page-shell>.material-library{padding-block:42px}
+ .page-shell>.project-cover{padding-top:24px}
+ .page-shell>.article-layout{padding-block:28px 0}
+ .article-layout .toc{padding:20px;margin-bottom:28px;border:0;gap:6px 18px}
+ .article-layout .prose>section{margin:0 -20px;padding:32px 20px}
+ .article-layout .learning{padding:22px}
+ .page-shell>.next-project{padding-block:34px;gap:22px}
+ .page-shell>.pub-year{padding-block:34px;gap:22px}
+ .pub-year>h2{font-size:32px}
+ .page-shell>.making-portraits{padding-block:28px 38px}
+ .page-shell .practice-item{padding:20px}
+ .page-shell .practice-grid{gap:24px}
+ .page-shell>.contact-panel{padding-block:38px}
+ .page-about .visitors{padding-block:38px}
+}
+@media print{.page-shell{display:block}.page-shell>*{padding-inline:0!important}.page-shell>.page-head,.page-shell>.about-layout,.page-shell>.research-question,.page-shell>.contact-panel,.page-shell>.next-project{background:#fff!important;color:#28382f}.page-shell :is(.research-question,.contact-panel,.next-project) :is(h2,.eyebrow,.email,.note){color:#28382f!important}.article-layout .prose>section{margin:0 0 24px;padding:24px 0}}
 @media(max-width:1050px){.header-inner{width:calc(100% - 64px)}.nav{gap:22px}.profile-hero{gap:40px}.profile-name-zh{display:block;margin:8px 0 0}.landscape-overview{gap:22px;grid-template-columns:1fr 1fr}.method-tabs button{font-size:11px}.methods-explorer.is-enhanced .method-panels{min-height:235px}}
 @media(max-width:760px){
  .header-inner{height:60px;width:calc(100% - 40px)}
