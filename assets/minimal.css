@@ -249,5 +249,80 @@ main :is(.profile-role,.profile-affiliation,.pub-authors,.pub-venue,.note,.capti
  .footer-main h2{font-size:27px}
 }
 @media(max-width:380px){.profile-intro h1{font-size:40px}.profile-name-zh{display:block;margin:9px 0 0}}
+/* Homepage: one alignment grid and a consistent sequence of research content. */
+.about-contact-cta{padding-block:36px}
+.contact-details{display:grid;grid-template-columns:1.2fr 1fr;gap:72px;padding-block:48px}
+.contact-details h2{font-size:24px;margin-bottom:18px}
+.contact-details p{margin-top:18px;max-width:470px;text-align:left;hyphens:none}
+.contact-email{font-size:clamp(20px,2.2vw,30px);font-weight:500;color:var(--green);text-decoration-thickness:1px;text-underline-offset:6px;overflow-wrap:anywhere}
+.contact-details .actions{margin-top:20px}
+.contact-map-band{background:var(--sage)}
+.page-contact .visitors{border:0;padding-block:48px}
+@media(max-width:760px){.contact-details{grid-template-columns:1fr;gap:34px;padding-block:36px}.contact-details h2{font-size:22px;margin-bottom:14px}.page-contact .visitors{padding-block:38px}.about-contact-cta{padding-block:30px}}
+.page-index .profile-hero{grid-template-columns:300px minmax(0,1fr);gap:64px;align-items:center;padding-block:48px}
+.page-index .profile-photo{max-width:300px}
+.page-index .profile-photo figcaption{margin-top:12px;letter-spacing:0}
+.page-index .profile-intro h1{font-size:54px}
+.page-index .profile-role{font-size:21px;margin-top:13px}
+.page-index .profile-affiliation{font-size:12px;line-height:1.7}
+.page-index .profile-bio{margin-top:22px;max-width:680px}
+.page-index .profile-links{gap:24px;margin-top:24px}
+.page-index .home-section,.page-index .research-landscape{padding-block:56px}
+.page-index .home-section-head{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:48px;align-items:start;margin-bottom:36px}
+.page-index .home-section-head h2{font-size:36px;line-height:1.2;max-width:440px}
+.page-index .home-section-head p{font-size:15px;line-height:1.8;max-width:none;padding:0}
+.page-index .home-section-head .text-link{margin-top:10px}
+.page-index .landscape-overview{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;margin-top:0;align-items:center}
+.page-index .interest-diagram{width:100%;max-width:470px;justify-self:end}
+.page-index .interest-list h3{font-size:21px}
+.page-index .interest-list article{padding-block:19px}
+.page-index .interest-list article:first-child{padding-top:0}
+.page-index .interest-list article:last-child{padding-bottom:0}
+.page-index .interest-list p{font-size:14px;line-height:1.8}
+.page-index .methods-explorer{margin-top:28px;padding-top:24px}
+.page-index .methods-explorer.is-enhanced .method-panels{min-height:190px}
+.page-index .method-exploration{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:48px}
+.page-index .home-practice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.page-index .home-practice-grid article{min-width:0}
+.page-index .home-practice-grid .zoom-link{display:flex;align-items:center;justify-content:center;aspect-ratio:4/3;background:#fff}
+.page-index .home-practice-grid img{width:100%;height:100%;max-height:266px;object-fit:contain}
+.page-index .home-practice-grid .caption{min-height:40px;margin-top:12px;font-size:11px;line-height:1.65}
+.page-index .home-practice-grid h3{font-size:21px;margin-block:12px 10px}
+.page-index .home-writing-grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,.85fr);gap:48px;align-items:start}
+.page-index .selected-paper{grid-template-columns:44px minmax(0,1fr);gap:20px;padding-block:23px}
+.page-index .selected-paper:first-child{padding-top:0;border-top:0}
+.page-index .selected-paper h3{font-size:19px;line-height:1.5}
+.page-index .home-updates{border-left:1px solid var(--line);padding-left:28px}
+.page-index .home-updates h3{font-size:21px;margin-bottom:18px}
+.page-index .home-updates .update-row{display:block;padding-block:18px;font-size:13px}
+.page-index .home-updates .update-row:first-of-type{border-top:0;padding-top:0}
+.page-index .home-updates .update-row time{display:block;font-size:11px;margin-bottom:8px}
+.page-index .home-updates p{line-height:1.8;text-align:left;hyphens:none}
+@media(max-width:1050px){.page-index .profile-hero{grid-template-columns:260px minmax(0,1fr);gap:40px}.page-index .profile-photo{max-width:260px}.page-index .profile-intro h1{font-size:46px}.page-index .profile-name-zh{display:inline-block;margin:0 0 0 14px;font-size:17px}.page-index .home-section-head,.page-index .landscape-overview,.page-index .method-exploration{gap:32px}.page-index .home-writing-grid{grid-template-columns:minmax(0,1.65fr) minmax(0,.85fr);gap:30px}.page-index .home-updates{padding-left:24px}.page-index .methods-explorer.is-enhanced .method-panels{min-height:250px}.page-index .home-practice-grid{gap:22px}}
+@media(max-width:760px){
+ .page-index .profile-hero{display:grid;grid-template-columns:1fr;gap:26px;padding-block:32px 38px}
+ .page-index .profile-photo{width:100%;max-width:none}
+ .page-index .profile-photo img{aspect-ratio:1.4}
+ .page-index .profile-intro h1{font-size:42px}
+ .page-index .profile-name-zh{font-size:16px}
+ .page-index .profile-role{font-size:20px}
+ .page-index .profile-links{gap:22px}
+ .page-index .home-section,.page-index .research-landscape{padding-block:40px}
+ .page-index .home-section-head{grid-template-columns:1fr;gap:18px;margin-bottom:28px}
+ .page-index .home-section-head h2{font-size:30px}
+ .page-index .landscape-overview{grid-template-columns:1fr;gap:28px}
+ .page-index .interest-diagram{justify-self:center;max-width:460px}
+ .page-index .interest-list h3{font-size:20px}
+ .page-index .method-exploration{grid-template-columns:1fr;gap:16px}
+ .page-index .methods-explorer.is-enhanced .method-panels{min-height:380px}
+ .page-index .home-practice-grid{grid-template-columns:1fr;gap:30px}
+ .page-index .home-practice-grid img{max-height:none}
+ .page-index .home-practice-grid .caption{min-height:0}
+ .page-index .home-writing-grid{grid-template-columns:1fr;gap:34px}
+ .page-index .home-updates{padding:26px 0 0;border-left:0;border-top:1px solid var(--line)}
+ .page-index .selected-paper{grid-template-columns:38px minmax(0,1fr);gap:15px}
+ .page-index .selected-paper h3{font-size:18px}
+}
+@media(max-width:380px){.page-index .profile-name-zh{display:block;margin:9px 0 0}}
 @media(prefers-reduced-motion:reduce){.nav a::after,.method-tabs button::after{transition:none}.pointer-effects{display:none}}
 @media(max-width:760px),(hover:none),(pointer:coarse){.pointer-effects{display:none}}

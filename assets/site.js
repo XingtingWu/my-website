@@ -1,4 +1,13 @@
 'use strict';
+// Preserve the previous contact URL now that contact has its own page.
+const redirectLegacyContact = () => {
+  if (document.body.classList.contains('page-about') && window.location.hash === '#contact') {
+    window.location.replace(new URL('contact.html', window.location.href).href);
+  }
+};
+redirectLegacyContact();
+window.addEventListener('hashchange', redirectLegacyContact);
+
 // Link the map and its text descriptions for pointer and keyboard exploration.
 const researchOverview = document.querySelector('.landscape-overview');
 if (researchOverview) {
