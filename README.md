@@ -51,10 +51,15 @@ Enlarged images use the same web derivatives.
 Every browser tab is titled `Xingting Wu`; page-specific descriptions and social
 sharing titles remain in the page metadata.
 
-The homepage introduces Xingting first, followed by a research interests map,
-four method explorations, and three selected projects:
-Nativity crafting, shared gardening, and the ongoing 2026 Our Outdoor Stories work.
-The 2025 Outdoor Discovery study remains in the complete Research journey.
+The homepage follows five parts: personal introduction, research interests and
+methods, selected projects, research in practice, and recent writing with updates.
+The selected projects are Nativity crafting, shared gardening, and the ongoing
+2026 Our Outdoor Stories work. The 2025 Outdoor Discovery study remains in the
+complete Research journey.
+
+About and Get in touch are separate pages. The visitor map appears only on
+`contact.html`; `about.html#contact` forwards to that page when JavaScript is
+available and provides a contact link otherwise.
 
 The UI is responsive, includes keyboard focus states and reduced-motion support,
 and provides search, publication filters, and a keyboard-accessible image dialog.
@@ -62,7 +67,8 @@ No analytics or external JavaScript is loaded.
 
 ## Making-process photographs
 
-The homepage Design Practice feature shows the Nativity garden-bed concept.
+The homepage Research in practice section shows the Nativity garden-bed concept
+alongside photographs of shared activities with residents.
 Practice opens with researcher photographs from ProtoLAB and Cricut preparation,
 followed by cutting layouts, laser fabrication, early assembly parts, and design
 iteration. The Nativity case links preparation to the later workshop changes.
