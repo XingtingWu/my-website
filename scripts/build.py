@@ -50,6 +50,39 @@ def research_interests():
     interests=['Design','Human–Computer Interaction','Older adults','AI and Education','Technology Adoption']
     return '<ul class="research-interests" aria-label="Research interests on Google Scholar">'+''.join('<li>'+escape(item)+'</li>' for item in interests)+'</ul>'
 
+def research_landscape():
+    """An accessible map of interests, with publication-backed method examples."""
+    # The reusable SVG lives in assets; inline links resolve from the page root.
+    diagram=(ROOT/'assets/research-landscape.svg').read_text().replace('href="../', 'href="')
+    papers_by_id={p['id']:p for p in PAPERS}
+    def paper_example(id, label):
+        return link(papers_by_id[id]['paper_url'], label)
+    methods=[
+        ('fieldwork','Fieldwork & co-design','Learning with people, in everyday life.',
+         'In my doctoral research, I bring together ethnographic fieldwork, conversations, participatory making, and iterative prototyping. I explore how activities and materials can develop with older adults and care staff, through use and adaptation.',
+         link('crafting.html#iteration','Adapting materials through making')+link('outdoor-stories.html#many-ways','Different ways to participate')),
+        ('q-methodology','Q methodology','Making room for different viewpoints.',
+         'I am interested in how people understand the same technology differently. My collaborative work uses Q methodology to explore art students’ perspectives on generative AI and creative identity, bringing patterns of viewpoints into focus.',
+         paper_example('roLk4NBRz8UC','Art students, GenAI & creative identity')),
+        ('mixed-methods','Experiments & mixed methods','Connecting experiences with patterns.',
+         'My collaborative work explores behaviour and perception through experimental studies and mixed methods. This includes human–machine collaboration, AI-supported teaching, and complementary approaches such as PLS-SEM and fsQCA to investigate technology experiences.',
+         paper_example('W7OEmFMy1HYC','AI teaching assistants: a mixed-methods study')+paper_example('qjMakFHDy7sC','Human–machine collaboration & driving')),
+        ('reviews','Reviews & bibliometrics','Looking across a field of research.',
+         'I also explore how reviews and bibliometric approaches can reveal the questions, concepts, and gaps shaping a field. Collaborative work includes game design for older adults, human–AI co-creation, and generative AI in design.',
+         paper_example('Tyk-4Ss8FVUC','Game design for older adults')+paper_example('3fE2CSJIrl8C','Generative AI in clothes design')),
+    ]
+    controls=''.join(f'<button type="button" id="method-tab-{id}" data-method="{id}">{name}<span aria-hidden="true">↗</span></button>' for id,name,*_ in methods)
+    panels=''.join(f'<section class="method-exploration" id="method-panel-{id}"><div><span class="eyebrow">{name}</span><h4>{title}</h4></div><div><p>{body}</p><div class="method-examples">{examples}</div></div></section>' for id,name,title,body,examples in methods)
+    return f'''<section class="research-landscape section" id="research-interests" aria-labelledby="landscape-heading">
+<div class="landscape-heading"><div>{eyebrow('Research overview')}<h2 id="landscape-heading">Research interests<br> &amp; methods.</h2></div><p>I explore how design and technology can support participation, creativity, and learning, through my doctoral research and wider collaborations.</p></div>
+<div class="landscape-overview"><div class="interest-list">
+<article data-interest-copy="care"><span class="interest-number">01</span><div><h3><a data-interest="care" href="research.html">Ageing &amp; everyday care {ARROW}</a></h3><p>Working with older adults and care staff through shared making, gardening, and outdoor discovery.</p><span class="interest-context">My doctoral focus</span></div></article>
+<article data-interest-copy="ai"><span class="interest-number">02</span><div><h3><a data-interest="ai" href="publications.html#pub-roLk4NBRz8UC">Human–AI interaction {ARROW}</a></h3><p>Exploring co-creation, social robots, and technology adoption: how people make sense of AI and find a place for it in their lives.</p></div></article>
+<article data-interest-copy="learning"><span class="interest-number">03</span><div><h3><a data-interest="learning" href="publications.html#pub-W7OEmFMy1HYC">AI in education &amp; creativity {ARROW}</a></h3><p>Investigating AI-supported design education, creative identity, and learning across generations.</p></div></article>
+</div><figure class="interest-diagram">{diagram}<figcaption>Explore an area to follow the research.</figcaption></figure></div>
+<div class="methods-explorer" data-methods-explorer><div class="methods-heading"><h3>Methods I explore</h3><p>Different questions call for different ways of learning.</p></div><div class="method-tabs" hidden>{controls}</div><div class="method-panels">{panels}</div></div>
+</section>'''
+
 def plant_journey():
     return '''<ol class="plant-journey" aria-label="From the garden to a shared story">
 <li><span class="journey-number">01</span><div><h3>Choose a place.</h3><p>A familiar path, a flower bed, or somewhere to pause.</p></div></li>
@@ -71,10 +104,10 @@ def write_page(file,title,description,body,active='home'):
     social_image='portrait' if file in ['index.html','about.html'] else 'garden-map'
     html=f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{escape(title)} · Xingting Wu</title><meta name="description" content="{escape(description)}">
-<meta name="theme-color" content="#f7f5ef"><link rel="canonical" href="{canonical}">
+<title>Xingting Wu</title><meta name="description" content="{escape(description)}">
+<meta name="theme-color" content="#ffffff"><link rel="canonical" href="{canonical}">
 <meta property="og:type" content="website"><meta property="og:title" content="{escape(title)} · Xingting Wu"><meta property="og:description" content="{escape(description)}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="https://www.xingtingwu.com/assets/images/{social_image}.webp">
-<link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48 64x64 128x128"><link rel="icon" href="favicon.png" type="image/png" sizes="128x128"><link rel="stylesheet" href="assets/site.css"><script defer src="assets/site.js"></script>
+<link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48 64x64 128x128"><link rel="icon" href="favicon.png" type="image/png" sizes="128x128"><link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/minimal.css"><script defer src="assets/site.js"></script><script defer src="assets/motion.js"></script>
 <noscript><style>@media(max-width:760px){{.site-header{{position:static}}.header-inner{{height:auto;display:block;padding-block:20px}}.nav{{display:flex;position:static;padding:15px 0 0;flex-direction:row;flex-wrap:wrap;border:0;gap:15px}}.nav .contact-link{{margin:0}}}}</style></noscript>
 </head><body><a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap header-inner"><a class="brand" href="index.html" aria-label="Xingting Wu, home"><span class="brand-mark" aria-hidden="true">xw</span><span>Xingting Wu <span class="chinese" lang="zh">武星廷</span></span></a>
@@ -114,6 +147,7 @@ home=f'''<div class="wrap"><section class="profile-hero fade-in" aria-labelledby
 <figure class="profile-photo">{img('portrait','Xingting Wu making a colourful artwork',eager=True)}<figcaption><span>Researcher. Designer. Illustrator.</span><span>Melbourne, Australia</span></figcaption></figure>
 <div class="profile-intro"><span class="eyebrow"><span class="dot"></span>Hello, I’m</span><h1 id="profile-title">Xingting Wu<span class="profile-name-zh" lang="zh">武星廷</span></h1><p class="profile-role">PhD candidate in Design</p><p class="profile-affiliation">Swinburne University of Technology · Melbourne</p><div class="profile-bio"><p>I’m a design researcher and illustrator working at the intersection of human–computer interaction, participatory design, and everyday life.</p><p>My PhD explores outdoor engagement in residential aged care. I work with older adults and care staff through crafting, gardening, and nature discovery to understand how design can support meaningful participation.</p><p>My wider research explores human–AI interaction, AI in education, and technology adoption. I collaborate with researchers across design, HCI, education, and related fields, connecting interests in creative practice and learning across generations.</p></div><div class="profile-links">{link(SCHOLAR,'Google Scholar','button')}{link('mailto:xingtingwu@swin.edu.au','Email')}{link('about.html','More about me')}</div></div>
 </section>
+{research_landscape()}
 <section class="section home-projects" id="projects"><div class="phd-intro"><div>{eyebrow('01 / Selected projects')}<h2>Making, growing,<br><em>sharing.</em></h2></div><div><p>My doctoral research follows the connections between creative activities, outdoor places, and everyday care. These projects bring that work into view.</p><div class="actions">{link('research.html','The full research journey')}</div></div></div>{project_grid(HOME_PROJECTS)}</section>
 {field_moments()}
 <section class="section home-publications" id="recent-writing"><div class="section-head"><div>{eyebrow('02 / Selected publications')}<h2>Recent writing.</h2></div>{link('publications.html',f'All publications ({len(PAPERS)})')}</div>{selected()}</section></div>
