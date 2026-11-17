@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15",
+  "updated": "2026-11-17",
   "profile_url": "https://scholar.google.com/citations?user=hHaTofQAAAAJ&hl=en",
   "publications": [
     {
@@ -46,14 +46,15 @@
     {
       "id": "roLk4NBRz8UC",
       "title": "Human-AI co-creation or conflict? Mapping art students’ diverse perspectives on creative identity with genAI: A Q methodology study",
-      "authors": "X Wu, TTM Tran, Q Zhou, J Wu, X Wang",
+      "authors": "Xingting Wu, Tram Thi Minh Tran, Qiqi Zhou, Jian Sun, Hao Wu, Xiaoyang Wang",
       "venue": "Education and Information Technologies",
       "year": 2026,
       "type": "journal",
       "label": "Journal article",
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hHaTofQAAAAJ&citation_for_view=hHaTofQAAAAJ:roLk4NBRz8UC",
       "paper_url": "https://link.springer.com/article/10.1007/s10639-026-13914-4",
-      "paper_label": "Publisher page"
+      "paper_label": "Publisher page",
+      "doi": "10.1007/s10639-026-13914-4"
     },
     {
       "id": "W7OEmFMy1HYC",
@@ -159,7 +160,7 @@
     {
       "id": "zYLM7Y9cAGgC",
       "title": "Human and Machine as Seen at the Co-Creation Age: A Co-Word Analysis in Human Machine Co-creation (2014-2024)",
-      "authors": "Mengyao Guo, Jinda Han, Gao Ze, Zhuang Yuan, Xingting Wu",
+      "authors": "Mengyao Guo, Jinda Han, Ze Gao, Yuan Zhuang, Xingting Wu",
       "venue": "International Conference on Applied Human Factors and Ergonomics (AHFE), volume 195",
       "year": 2025,
       "type": "conference",

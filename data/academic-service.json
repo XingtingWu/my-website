@@ -1,0 +1,321 @@
+{
+  "orcid": "https://orcid.org/0009-0006-9582-6340",
+  "source_url": "https://pub.orcid.org/v3.0/0009-0006-9582-6340/peer-reviews",
+  "updated": "2026-11-17",
+  "record_count": 29,
+  "conference_service_source": "Roles confirmed by Xingting Wu on 17 November 2026; no review counts or service years supplied.",
+  "conferences": [
+    {
+      "name": "Chinese CHI",
+      "roles": ["Program committee member", "Reviewer"],
+      "url": "https://www.icachi.org/en/conference"
+    },
+    {
+      "name": "CHI",
+      "roles": ["Reviewer"],
+      "url": "https://chi.acm.org/"
+    },
+    {
+      "name": "CSCW",
+      "roles": ["Reviewer"],
+      "url": "https://cscw.acm.org/"
+    },
+    {
+      "name": "DIS",
+      "roles": ["Reviewer"],
+      "url": "https://dis.acm.org/"
+    },
+    {
+      "name": "OzCHI",
+      "roles": ["Reviewer"],
+      "url": "https://www.ozchi.org/"
+    }
+  ],
+  "journals": [
+    {
+      "title": "BMC Medical Education",
+      "issn": "1472-6920",
+      "years": [
+        "2026"
+      ],
+      "public_review_records": 4,
+      "title_source": "https://api.crossref.org/journals/1472-6920",
+      "indicators": {
+        "indices": [
+          "SCIE",
+          "SSCI",
+          "Scopus"
+        ],
+        "year": 2025,
+        "jif": "4.2",
+        "quartile": "Q1",
+        "source": "https://link.springer.com/journal/12909",
+        "checked": "2026-11-17",
+        "quartile_source": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=114"
+      }
+    },
+    {
+      "title": "BMC Psychology",
+      "issn": "2050-7283",
+      "years": [
+        "2026"
+      ],
+      "public_review_records": 2,
+      "title_source": "https://api.crossref.org/journals/2050-7283",
+      "indicators": {
+        "indices": [
+          "SSCI",
+          "Scopus"
+        ],
+        "year": 2025,
+        "jif": "4.6",
+        "quartile": "Q1",
+        "source": "https://link.springer.com/journal/40359",
+        "checked": "2026-11-17",
+        "quartile_source": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=97"
+      }
+    },
+    {
+      "title": "BMC Public Health",
+      "issn": "1471-2458",
+      "years": [
+        "2026"
+      ],
+      "public_review_records": 1,
+      "title_source": "https://api.crossref.org/journals/1471-2458",
+      "indicators": {
+        "indices": [
+          "SCIE",
+          "Scopus"
+        ],
+        "year": 2025,
+        "jif": "4.4",
+        "quartile": "Q1",
+        "source": "https://link.springer.com/journal/12889",
+        "checked": "2026-11-17",
+        "quartile_source": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=106"
+      }
+    },
+    {
+      "title": "City and Built Environment",
+      "issn": "2435-7936",
+      "years": [
+        "2026"
+      ],
+      "public_review_records": 1,
+      "title_source": "https://api.crossref.org/journals/2435-7936",
+      "indicators": {
+        "indices": [
+          "Scopus",
+          "DOAJ"
+        ],
+        "year": null,
+        "jif": null,
+        "quartile": null,
+        "source": "https://link.springer.com/journal/44213",
+        "checked": "2026-11-17"
+      }
+    },
+    {
+      "title": "Cogent Education",
+      "issn": "2331-186X",
+      "years": [
+        "2026"
+      ],
+      "public_review_records": 1,
+      "title_source": "https://api.crossref.org/journals/2331-186X",
+      "indicators": {
+        "indices": [
+          "ESCI",
+          "Scopus"
+        ],
+        "year": 2025,
+        "jif": "2.7",
+        "quartile": "Q1",
+        "source": "https://www.tandfonline.com/action/journalInformation?journalCode=oaed&show=instructions",
+        "checked": "2026-11-17",
+        "quartile_scope": "best"
+      }
+    },
+    {
+      "title": "Discover Education",
+      "issn": "2731-5525",
+      "years": [
+        "2026"
+      ],
+      "public_review_records": 1,
+      "title_source": "https://api.crossref.org/journals/2731-5525",
+      "indicators": {
+        "indices": [
+          "Scopus",
+          "DOAJ"
+        ],
+        "year": null,
+        "jif": null,
+        "quartile": null,
+        "source": "https://link.springer.com/journal/44217",
+        "checked": "2026-11-17"
+      }
+    },
+    {
+      "title": "European Journal of Education",
+      "issn": "1465-3435",
+      "years": [
+        "2026"
+      ],
+      "public_review_records": 1,
+      "title_source": "https://api.crossref.org/journals/1465-3435",
+      "indicators": {
+        "indices": [
+          "SSCI",
+          "Scopus"
+        ],
+        "year": 2025,
+        "jif": "5.3",
+        "quartile": "Q1",
+        "source": "https://onlinelibrary.wiley.com/journal/14653435/journal-metrics",
+        "checked": "2026-11-17",
+        "quartile_source": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=76",
+        "index_sources": {
+          "SSCI": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=76"
+        }
+      }
+    },
+    {
+      "title": "Humanities and Social Sciences Communications",
+      "issn": "2662-9992",
+      "years": [
+        "2026"
+      ],
+      "public_review_records": 5,
+      "title_source": "https://api.crossref.org/journals/2662-9992",
+      "indicators": {
+        "indices": [
+          "SSCI",
+          "AHCI",
+          "Scopus"
+        ],
+        "year": 2025,
+        "jif": "4.8",
+        "quartile": "Q1",
+        "source": "https://www.nature.com/palcomms/journal-information",
+        "checked": "2026-11-17",
+        "index_source": "https://www.nature.com/palcomms/journal-information/indexing",
+        "quartile_source": "https://www.nature.com/palcomms/journal-information/indexing",
+        "quartile_scope": "Social Sciences, Interdisciplinary",
+        "quartile_note": "Q1 derived from publisher-reported JIF rank 9/275; matching JIF 4.8 is explicitly dated 2025 on journal-information page."
+      }
+    },
+    {
+      "title": "International Journal of Human-Computer Interaction",
+      "issn": "1532-7590",
+      "years": [
+        "2026"
+      ],
+      "public_review_records": 2,
+      "title_source": "https://api.crossref.org/journals/1532-7590",
+      "indicators": {
+        "indices": [
+          "SCIE",
+          "SSCI",
+          "Scopus"
+        ],
+        "year": 2025,
+        "jif": "6.1",
+        "quartile": "Q1",
+        "source": "https://www.tandfonline.com/journals/hihc20/about-this-journal",
+        "checked": "2026-11-17",
+        "quartile_scope": "best"
+      }
+    },
+    {
+      "title": "Journal of Applied Gerontology",
+      "issn": "1552-4523",
+      "years": [
+        "2026"
+      ],
+      "public_review_records": 1,
+      "title_source": "https://api.crossref.org/journals/1552-4523",
+      "indicators": {
+        "indices": [
+          "SSCI"
+        ],
+        "year": 2025,
+        "jif": "2.0",
+        "quartile": "Q3",
+        "source": "https://www.wolterskluwer.com/en/solutions/ovid/journal-of-applied-gerontology-15519",
+        "checked": "2026-11-17",
+        "quartile_source": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=310",
+        "index_sources": {
+          "SSCI": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=310"
+        }
+      }
+    },
+    {
+      "title": "Operations Research Forum",
+      "issn": "2662-2556",
+      "years": [
+        "2026"
+      ],
+      "public_review_records": 2,
+      "title_source": "https://api.crossref.org/journals/2662-2556",
+      "indicators": {
+        "indices": [
+          "Scopus"
+        ],
+        "year": null,
+        "jif": null,
+        "quartile": null,
+        "source": "https://link.springer.com/journal/43069",
+        "checked": "2026-11-17"
+      }
+    },
+    {
+      "title": "Scientific Reports",
+      "issn": "2045-2322",
+      "years": [
+        "2025",
+        "2026"
+      ],
+      "public_review_records": 7,
+      "title_source": "https://api.crossref.org/journals/2045-2322",
+      "indicators": {
+        "indices": [
+          "SCIE",
+          "Scopus"
+        ],
+        "year": 2025,
+        "jif": "4.9",
+        "quartile": "Q1",
+        "source": "https://www.nature.com/srep/about",
+        "checked": "2026-11-17",
+        "quartile_source": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=88",
+        "index_sources": {
+          "SCIE": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=88"
+        }
+      }
+    },
+    {
+      "title": "Virtual Reality",
+      "issn": "1434-9957",
+      "years": [
+        "2026"
+      ],
+      "public_review_records": 1,
+      "title_source": "https://api.crossref.org/journals/1434-9957",
+      "indicators": {
+        "indices": [
+          "SCIE",
+          "Scopus"
+        ],
+        "year": 2025,
+        "jif": "5.4",
+        "quartile": "Q2",
+        "source": "https://link.springer.com/journal/10055",
+        "checked": "2026-11-17",
+        "quartile_source": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=75"
+      }
+    }
+  ],
+  "indicator_note": "2025 JIF (2026 release). Quartiles checked against publishers or the 2026 JCR table hosted by Nikolaev Institute of Inorganic Chemistry. Table labels JIF by release year; all values were cross-checked with publisher data-year labels. Best quartiles are explicitly marked. Missing metrics are omitted."
+}

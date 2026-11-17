@@ -1,0 +1,128 @@
+{
+  "updated": "2026-11-17",
+  "note": "Journal-level indicators, not article-level scores. JIF year is the data year. Index and quartile sources are stored separately from publisher JIF sources. The 2026 JCR release table is cross-checked against publisher data-year labels; best quartiles are marked where identified as such.",
+  "journals": {
+    "International Journal of Human–Computer Interaction": {
+      "match": [
+        "u-x6o8ySG0sC",
+        "Tyk-4Ss8FVUC",
+        "0EnyYjriUFMC"
+      ],
+      "year": 2025,
+      "jif": "6.1",
+      "quartile": "Q1",
+      "quartile_scope": "best",
+      "indices": [
+        "SCIE",
+        "SSCI"
+      ],
+      "source": "https://www.tandfonline.com/journals/hihc20/about-this-journal",
+      "quartile_source": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=60",
+      "checked": "2026-11-17"
+    },
+    "Frontiers in Psychology": {
+      "match": [
+        "W7OEmFMy1HYC"
+      ],
+      "year": 2025,
+      "jif": "3.8",
+      "quartile": "Q1",
+      "quartile_scope": "publisher-reported",
+      "indices": [
+        "SSCI"
+      ],
+      "source": "https://www.frontiersin.org/about/impact",
+      "quartile_source": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=136",
+      "checked": "2026-11-17",
+      "index_sources": {
+        "SSCI": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=136"
+      }
+    },
+    "Education and Information Technologies": {
+      "match": [
+        "roLk4NBRz8UC"
+      ],
+      "year": 2025,
+      "jif": "7.2",
+      "quartile": "Q1",
+      "indices": [
+        "SSCI"
+      ],
+      "source": "https://link.springer.com/journal/10639",
+      "quartile_source": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=44",
+      "checked": "2026-11-17",
+      "index_sources": {
+        "SSCI": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=44"
+      }
+    },
+    "Entertainment Computing": {
+      "match": [
+        "KlAtU1dfN6UC"
+      ],
+      "year": 2025,
+      "jif": "2.4",
+      "quartile": "Q3",
+      "indices": [
+        "SCIE"
+      ],
+      "source": "https://www.sciencedirect.com/journal/entertainment-computing/about/insights",
+      "quartile_source": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=261",
+      "checked": "2026-11-17",
+      "index_sources": {
+        "SCIE": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=261"
+      }
+    },
+    "Journal of Applied Gerontology": {
+      "match": [
+        "care-robots-filial-responsibility"
+      ],
+      "year": 2025,
+      "jif": "2.0",
+      "quartile": "Q3",
+      "indices": [
+        "SSCI"
+      ],
+      "source": "https://www.wolterskluwer.com/en/solutions/ovid/journal-of-applied-gerontology-15519",
+      "jif_source": "https://www.wolterskluwer.com/en/solutions/ovid/journal-of-applied-gerontology-15519",
+      "quartile_source": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=310",
+      "checked": "2026-11-17",
+      "index_sources": {
+        "SSCI": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=310"
+      }
+    },
+    "Transportation Research Part F: Traffic Psychology and Behaviour": {
+      "match": [
+        "8k81kl-MbHgC"
+      ],
+      "year": 2025,
+      "jif": "5.0",
+      "quartile": "Q1",
+      "indices": [
+        "SSCI"
+      ],
+      "source": "https://www.sciencedirect.com/journal/transportation-research-part-f-traffic-psychology-and-behaviour/about/insights",
+      "quartile_source": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=85",
+      "checked": "2026-11-17",
+      "index_sources": {
+        "SSCI": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=85"
+      }
+    },
+    "Accident Analysis & Prevention": {
+      "match": [
+        "qjMakFHDy7sC"
+      ],
+      "year": 2025,
+      "jif": "7.4",
+      "quartile": "Q1",
+      "indices": [
+        "SSCI"
+      ],
+      "source": "https://www.sciencedirect.com/journal/accident-analysis-and-prevention/about/insights",
+      "quartile_source": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=42",
+      "checked": "2026-11-17",
+      "index_sources": {
+        "SSCI": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=42"
+      }
+    }
+  }
+}

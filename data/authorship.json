@@ -1,0 +1,106 @@
+{
+  "updated": "2026-11-17",
+  "note": "First-author roles follow the byline. Corresponding-author roles are recorded only where explicitly identified by the publisher. Null means not yet confirmed, not absent. Counts exclude preprints.",
+  "publications": {
+    "KlAtU1dfN6UC": {
+      "first_author": false,
+      "corresponding_author": true,
+      "source": "https://www.sciencedirect.com/science/article/pii/S1875952126001722"
+    },
+    "care-robots-filial-responsibility": {
+      "first_author": true,
+      "corresponding_author": true,
+      "source": "https://journals.sagepub.com/doi/full/10.1177/07334648261493744"
+    },
+    "u-x6o8ySG0sC": {
+      "first_author": false,
+      "corresponding_author": null,
+      "source": "https://www.tandfonline.com/doi/full/10.1080/10447318.2024.2402126"
+    },
+    "roLk4NBRz8UC": {
+      "first_author": true,
+      "corresponding_author": true,
+      "source": "https://link.springer.com/article/10.1007/s10639-026-13914-4"
+    },
+    "W7OEmFMy1HYC": {
+      "first_author": false,
+      "corresponding_author": false,
+      "source": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1624182/full"
+    },
+    "qjMakFHDy7sC": {
+      "first_author": false,
+      "corresponding_author": null,
+      "source": "https://www.sciencedirect.com/science/article/pii/S0001457525001538"
+    },
+    "Tyk-4Ss8FVUC": {
+      "first_author": true,
+      "corresponding_author": false,
+      "source": "https://www.tandfonline.com/doi/full/10.1080/10447318.2025.2506508"
+    },
+    "9yKSN-GCB0IC": {
+      "first_author": false,
+      "corresponding_author": null,
+      "source": "http://www.designartj.com/CN/10.19554/j.cnki.1001-3563.2022.06.004"
+    },
+    "u5HHmVD_uO8C": {
+      "first_author": false,
+      "corresponding_author": true,
+      "source": "https://link.springer.com/chapter/10.1007/978-3-030-68017-6_125"
+    },
+    "0EnyYjriUFMC": {
+      "first_author": true,
+      "corresponding_author": false,
+      "source": "https://www.tandfonline.com/doi/full/10.1080/10447318.2026.2668041"
+    },
+    "ufrVoPGSRksC": {
+      "first_author": false,
+      "corresponding_author": null,
+      "source": "https://dl.acm.org/doi/10.1145/3764687.3767274"
+    },
+    "WF5omc3nYNoC": {
+      "first_author": false,
+      "corresponding_author": null,
+      "source": "https://arxiv.org/abs/2511.03375"
+    },
+    "zYLM7Y9cAGgC": {
+      "first_author": false,
+      "corresponding_author": true,
+      "source": "https://openaccess.cms-conferences.org/publications/book/978-1-964867-71-7/article/978-1-964867-71-7_38"
+    },
+    "d1gkVwhDpl0C": {
+      "first_author": true,
+      "corresponding_author": null,
+      "source": "http://www.designartj.com/CN/10.19554/j.cnki.1001-3563.2022.16.031"
+    },
+    "MXK_kJrjxJIC": {
+      "first_author": false,
+      "corresponding_author": false,
+      "source": "https://link.springer.com/chapter/10.1007/978-3-032-30860-3_20"
+    },
+    "8k81kl-MbHgC": {
+      "first_author": false,
+      "corresponding_author": null,
+      "source": "https://www.sciencedirect.com/science/article/pii/S1369847826001592"
+    },
+    "UebtZRa9Y70C": {
+      "first_author": true,
+      "corresponding_author": null,
+      "source": "https://dl.acm.org/doi/10.1145/3772363.3798476"
+    },
+    "Se3iqnhoufwC": {
+      "first_author": false,
+      "corresponding_author": null,
+      "source": "https://dl.acm.org/doi/10.1145/3772363.3799255"
+    },
+    "3fE2CSJIrl8C": {
+      "first_author": false,
+      "corresponding_author": null,
+      "source": "https://openaccess.cms-conferences.org/publications/book/978-1-964867-88-5/article/978-1-964867-88-5_7"
+    },
+    "YsMSGLbcyi4C": {
+      "first_author": true,
+      "corresponding_author": null,
+      "source": "https://www.researchsquare.com/article/rs-7008171/v1"
+    }
+  }
+}

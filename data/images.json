@@ -238,5 +238,217 @@
   "craft-workshop-table-small.webp": [
     800,
     374
+  ],
+  "selected-nativity-graded.webp": [
+    1600,
+    1200
+  ],
+  "selected-nativity-graded-small.webp": [
+    800,
+    600
+  ],
+  "selected-gardening-graded.webp": [
+    1600,
+    900
+  ],
+  "selected-gardening-graded-small.webp": [
+    800,
+    450
+  ],
+  "selected-stories-graded.webp": [
+    1600,
+    1200
+  ],
+  "selected-stories-graded-small.webp": [
+    800,
+    600
+  ],
+  "craft-display-together.webp": [
+    1600,
+    1200
+  ],
+  "craft-display-together-small.webp": [
+    800,
+    600
+  ],
+  "garden-planting-detail.webp": [
+    1600,
+    1200
+  ],
+  "garden-planting-detail-small.webp": [
+    800,
+    600
+  ],
+  "garden-watering.webp": [
+    1200,
+    1600
+  ],
+  "garden-watering-small.webp": [
+    600,
+    800
+  ],
+  "garden-returning.webp": [
+    1200,
+    1600
+  ],
+  "garden-returning-small.webp": [
+    600,
+    800
+  ],
+  "discovery-map-conversation.webp": [
+    1600,
+    1200
+  ],
+  "discovery-map-conversation-small.webp": [
+    800,
+    600
+  ],
+  "discovery-bird-sharing.webp": [
+    1600,
+    1200
+  ],
+  "discovery-bird-sharing-small.webp": [
+    800,
+    600
+  ],
+  "stories-walk-cards.webp": [
+    1200,
+    1600
+  ],
+  "stories-walk-cards-small.webp": [
+    600,
+    800
+  ],
+  "stories-walk-blossom.webp": [
+    1200,
+    1600
+  ],
+  "stories-walk-blossom-small.webp": [
+    600,
+    800
+  ],
+  "stories-walk-looking.webp": [
+    1200,
+    1600
+  ],
+  "stories-walk-looking-small.webp": [
+    600,
+    800
+  ],
+  "stories-walk-leaf.webp": [
+    1200,
+    1600
+  ],
+  "stories-walk-leaf-small.webp": [
+    600,
+    800
+  ],
+  "stories-map-conversation.webp": [
+    1600,
+    1200
+  ],
+  "stories-map-conversation-small.webp": [
+    800,
+    600
+  ],
+  "stories-video-conversation.webp": [
+    1600,
+    1200
+  ],
+  "stories-video-conversation-small.webp": [
+    800,
+    600
+  ],
+  "stories-shared-display.webp": [
+    1600,
+    1200
+  ],
+  "stories-shared-display-small.webp": [
+    800,
+    600
+  ],
+  "stories-treasure-card.webp": [
+    342,
+    513
+  ],
+  "stories-plant-info-card.webp": [
+    342,
+    513
+  ],
+  "stories-sharing-recording.webp": [
+    482,
+    570
+  ],
+  "stories-recorded-label.webp": [
+    428,
+    570
+  ],
+  "stories-written-memory.webp": [
+    808,
+    573
+  ],
+  "stories-written-memory-small.webp": [
+    800,
+    567
+  ],
+  "stories-plant-labels.webp": [
+    1040,
+    635
+  ],
+  "stories-plant-labels-small.webp": [
+    800,
+    488
+  ],
+  "stories-postcard-bay-leaf.webp": [
+    460,
+    332
+  ],
+  "stories-postcard-euphorbia.webp": [
+    460,
+    332
+  ],
+  "stories-garden-hero.webp": [
+    2400,
+    1800
+  ],
+  "stories-garden-hero-medium.webp": [
+    1600,
+    1200
+  ],
+  "stories-garden-hero-small.webp": [
+    800,
+    600
+  ],
+  "stories-walk-group-cover.webp": [
+    1600,
+    1200
+  ],
+  "stories-walk-group-cover-small.webp": [
+    800,
+    600
+  ],
+  "practice-plant-card-outdoors.webp": [
+    1200,
+    1600
+  ],
+  "practice-plant-card-outdoors-small.webp": [
+    600,
+    800
+  ],
+  "practice-card-in-garden.webp": [
+    1200,
+    1600
+  ],
+  "practice-card-in-garden-small.webp": [
+    600,
+    800
+  ],
+  "practice-circular-map.webp": [
+    1200,
+    1600
+  ],
+  "practice-circular-map-small.webp": [
+    600,
+    800
   ]
 }
