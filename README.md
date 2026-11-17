@@ -51,26 +51,177 @@ Enlarged images use the same web derivatives.
 Every browser tab is titled `Xingting Wu`; page-specific descriptions and social
 sharing titles remain in the page metadata.
 
-The homepage follows five parts: personal introduction, research interests and
-methods, selected projects, research in practice, and recent writing with updates.
-The selected projects are Nativity crafting, shared gardening, and the ongoing
-2026 Our Outdoor Stories work. The 2025 Outdoor Discovery study remains in the
-complete Research journey.
+The homepage follows six parts: personal introduction, research interests and
+methods, My PhD Field Work, education and experience
+(including volunteering and content creation), recent writing with publication
+statistics, and a unified academic service section. News & updates is hidden at
+the owner's request. Recent writing contains
+five papers, including the game-design review, without a news sidebar. The sections
+alternate white and pale-green bands. Academic service counts sit directly above
+the reviewer journal list on one white band. The three fieldwork
+cards link to Outdoor Nativity Scene, Our Gardening Club, and the Our Outdoor Stories book.
+Their covers use the owner’s colour-graded photographs supplied on 17 November
+2026, exported for the web without additional colour filters or AI enhancement.
+The 2025 Outdoor Discovery study remains in the complete Research journey.
+The Research overview is a two-column grid of four image cards, labelled Study 1
+through Study 4. Each card contains a project name and short description and links
+directly to its study page; the previous timeline and secondary overview sections
+have been removed. On mobile the cards stack in one column.
+Study 4 follows slides 17–21 of the Outdoor Engagement deck: design materials,
+walking together, sharing and recording, making stories shareable, and revisiting
+the outdoors. The storybook follows the five stages. Existing section anchors are
+retained for links from Home and earlier versions.
+The homepage method explorer has five tabs: Ethnography, Co-design & participatory
+design, Q methodology, Qualitative & quantitative methods, and Reviews. Research
+through Design sits with participatory design; reviews distinguish interests in
+qualitative synthesis from published bibliometric work.
 
-About and Get in touch are separate pages. The visitor map appears only on
-`contact.html`; `about.html#contact` forwards to that page when JavaScript is
-available and provides a contact link otherwise.
+The About page has been retired; its biographical content is incorporated into
+Home. The visitor map appears only on `contact.html`. Get in touch includes
+the owner's WeChat ID and cropped QR code. The CV is not currently offered. The QR is
+shown at 180 px on desktop and 160 px on mobile and can be enlarged. It retains
+the original encoded image, with private metadata removed.
 
 The UI is responsive, includes keyboard focus states and reduced-motion support,
 and provides search, publication filters, and a keyboard-accessible image dialog.
 No analytics or external JavaScript is loaded.
 
+## Academic service
+
+Home includes one Academic service section at the bottom. Its summary highlights
+ORCID review-record and journal counts in large type, followed by Conference
+service and Journals I review for on the same background. Conference service
+lists Chinese CHI (Program committee member & Reviewer), and CHI, CSCW, DIS and
+OzCHI (Reviewer), with official conference links. These roles were confirmed by
+Xingting Wu on 17 November 2026; no years or review counts were supplied, so the
+ORCID totals remain unchanged. Chinese CHI links to ICACHI's conference history
+without implying a specific year or service for the renamed ICHEC conference.
+Journal names are followed by parenthetical indices,
+2025 JIF and JCR quartiles where verified. Each indicator links to a source. The
+2026 JCR release table hosted by NIIC supplements publisher quartile information;
+its release-year columns are cross-checked against publisher data-year labels.
+The three journals without a verified JIF display only confirmed indexing.
+Both the counts and the list use the same data file. The
+dated snapshot in `data/academic-service.json` comes from the public ORCID record
+0009-0006-9582-6340, with journal titles verified against Crossref ISSN metadata.
+The 17 November 2026 snapshot contains 29 distinct public review records across
+13 journals. This is a count of ORCID records, not a claim about unique manuscripts
+or a complete lifetime total. The page links to ORCID; it does not fetch records
+in visitors' browsers. Raw API responses remain in the private implementation
+folder outside the website.
+
+## Publication statistics, indicators, and CV
+
+The 17 November 2026 Scholar check matched all 20 listed outputs: 11 journal
+articles, 7 conference contributions, and 2 preprints. The published-paper
+statistics exclude preprints. `data/authorship.json` stores first-author and
+explicitly verified corresponding-author roles. Unknown corresponding-author
+roles remain null; the displayed count has a plus sign while verification is
+incomplete. Roles can overlap. Last-author position is not treated as proof of
+corresponding authorship.
+
+`data/journal-metrics.json` holds dated journal indicators and source links.
+These are 2025 JIF data (released in 2026). Quartiles are shown only where the
+publisher specifies the JIF quartile; Taylor & Francis's best quartile is
+labelled accordingly. Missing quartiles remain omitted. JIF is not assigned to
+conference contributions or preprints. Publisher records supersede abbreviated
+Scholar bylines where they disagree.
+
+`data/profile.json` supplies education, industry experience, and volunteering on Home.
+Volunteering includes mecwacare's Aged Care Volunteer Visitors Scheme (January
+2026 onward) and Inclusee Happy Hour
+content creation (December 2025 onward), with official organisation links. Dates
+and duties were cross-checked against welcome and programme emails. Private emails
+and volunteer recipient details are not published.
+The CV download and PDF were withdrawn at the owner's request; draft CVs remain
+outside the public website. No PDF documents are currently permitted in the public tree.
+The homepage opening introduction links the three doctoral supervisors and notes
+ARC scholarship support. Content creation follows Community & volunteering, with
+separate Xiaohongshu research-notes and illustration accounts and descriptions
+verified against their public profiles.
+
+The homepage Our Outdoor Stories card links directly to the latest Heyzine reader:
+https://heyzine.com/flip-book/990e984dee.html. The Research overview continues to link
+to the Study 4 case page, which also provides a storybook link. No admin URL is published.
+
 ## Making-process photographs
 
-The homepage Research in practice section shows the Nativity garden-bed concept
-alongside photographs of shared activities with residents.
 Practice opens with researcher photographs from ProtoLAB and Cricut preparation,
 followed by cutting layouts, laser fabrication, early assembly parts, and design
 iteration. The Nativity case links preparation to the later workshop changes.
 Three images are labelled stills extracted from original 2024 preparation videos.
 Source videos and private extraction records remain outside the website.
+
+## Study photographs from the presentation
+
+The four study pages use 13 additional original photographs identified in the
+Outdoor Engagement — Four PhD Studies Figma presentation. They show the Nativity
+display taking shape, planting and follow-up care, shared map and bird-image
+conversations, and the walking materials in use outdoors and indoors.
+Photographs are placed beside the relevant activity descriptions, with captions,
+responsive image sizes and full-image viewing. The Study 4 page remains labelled
+as ongoing. Previously excluded photographs are not reintroduced.
+
+The original photo paths, presentation node references and selection record stay
+in the private implementation folder outside this repository. These exports use
+the original photographs, without AI enhancement or additional colour filters.
+
+## Study 4 photograph and journal indicator check — 17 November 2026
+
+Study 4 uses the original IMG_7169 photograph from 30 October 2026 beside its
+title and introduction. The Research overview card uses IMG_6807. Public image
+derivatives have metadata removed and responsive sizes. The AI-generated
+comparison was not selected because it changed faces and
+scene details, and is kept only in the private implementation folder.
+
+Seven English-language journal titles have been cross-checked against the 2026
+JCR release table and publisher JIF information (2025 data year). Missing SSCI
+labels and quartiles have been filled in. On Publications, indexing, quartile,
+and JIF labels link separately to their supporting sources. Chinese journal
+articles and conference contributions are not assigned unsupported JCR metrics.
+
+## Practice and visitor locations — local preview
+
+Practice now has two sections: ProtoLAB & fabrication, and Visual & information
+design. Each follows Design process then Output, with specific image captions
+and links into the research studies. Existing `#making-process`, `#materials`,
+and `#illustration` links remain valid. Home no longer displays News & updates.
+Visual & information design pairs card designs with real use: treasure hunt
+cards held by residents, plant information cards hanging outdoors, and the large
+circular walking map with a shared conversation. Process and output descriptions
+use short bullet points. The final card specification, confirmed by the user,
+is 12 × 18 cm, 3 mm acrylic, UV printing. No map material is inferred.
+Three new original photos (IMG_7276, IMG_7294, IMG_7199) are exported as
+metadata-free WebP assets. Source records and previews stay outside the website
+in `implementation/practice-in-use-2026-11-17/`.
+Recent writing uses equal-height desktop rows and consistent padding; mobile
+rows expand with their content.
+
+Contact uses a restrained Equal Earth world map with selectable country markers
+and a country dropdown. The public-domain Natural Earth basemap is bundled as
+`assets/visitor-world.svg`; representative country positions are stored in
+`data/country-positions.json`. These are country labels, not visitor coordinates.
+Click, focus, keyboard activation, or the dropdown shows recorded visit counts.
+`scripts/refresh_visitors.py` reads only the aggregate country table from the
+existing public MapMyVisitors statistics page. The exported `data/visitors.json`
+does not include individual visits, IP addresses, cities, or coordinates.
+The existing counting request remains on Contact only, and is disabled on local
+preview hosts. These totals therefore describe the embedded counter's visits,
+not unique people or all pageviews across the website.
+
+After publication to `main`, `.github/workflows/visitor-locations.yml` runs on a
+15-minute schedule (subject to GitHub scheduling delays). It updates only
+`data/visitors.json` on a separate `visitor-data` branch using the repository's
+standard Actions token. `vercel.json` disables deployments for `visitor-data`
+only, so counter refreshes do not trigger repeated site builds. Other branches
+retain normal Vercel deployments. No new API secret is required. The production
+page reads that JSON through GitHub's
+raw-file host every five minutes while visible; caching can add a delay.
+
+The workflow has been prepared locally and has not yet run on GitHub. Confirm
+its first successful run and the public feed when publishing. If Actions is
+disabled, enable this workflow in the repository. If the source format changes
+or fetching fails, the refresh fails rather than publishing guessed totals;
+the page retains its last available data and timestamp. A bundled snapshot
+remains usable without JavaScript or network access. Refresh it manually with
+`python3 scripts/refresh_visitors.py`. Parser checks: `python3 scripts/test_visitors.py`.

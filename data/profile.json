@@ -1,0 +1,73 @@
+{
+  "updated": "2026-11-17",
+  "education": [
+    {
+      "dates": "2024–present",
+      "title": "PhD in Design",
+      "institution": "Swinburne University of Technology",
+      "details": "Melbourne, Australia · Full scholarship"
+    },
+    {
+      "dates": "2019–2022",
+      "title": "Master’s degree in Digital Media Design",
+      "institution": "Hunan University",
+      "details": "Changsha, China"
+    },
+    {
+      "dates": "2015–2019",
+      "title": "BA in Environmental Design",
+      "institution": "Northeast Agricultural University",
+      "details": "Harbin, China"
+    }
+  ],
+  "volunteering": [
+    {
+      "dates": "Jan 2026–present",
+      "title": "Volunteer visitor",
+      "institution": "mecwacare · Aged Care Volunteer Visitors Scheme",
+      "programme": "Aged Care Volunteer Visitors Scheme",
+      "url": "https://www.mecwacare.org.au/support-us/volunteering/",
+      "programme_url": "https://www.health.gov.au/our-work/aged-care-volunteer-visitors-scheme-acvvs/about",
+      "details": "I visit an older person in residential aged care for companionship and conversation, building a connection through regular visits.",
+      "cv_details": [
+        "Provide companionship and conversation through regular visits to an older person in residential aged care.",
+        "Maintain contact with the volunteer coordinator and record visits as part of the Aged Care Volunteer Visitors Scheme."
+      ],
+      "location": "Melbourne, Australia"
+    },
+    {
+      "dates": "Dec 2025–present",
+      "title": "Clubs Content Creator",
+      "institution": "Inclusee",
+      "programme": "Happy Hour online community programme",
+      "url": "https://inclusee.org.au/volunteers/",
+      "details": "I create quizzes and illustrated presentation materials for Happy Hour, an online social programme for older adults, and refine them with the programme team.",
+      "cv_details": [
+        "Develop quizzes and visual presentation materials for Happy Hour online group sessions for older adults.",
+        "Contributed Famous Quotes, Famous Aussies: Guess Who?, and Aussie Christmas activities; revised imagery and content in response to the programme team's feedback.",
+        "Work behind the scenes in a content-creation role, supporting the team who deliver the sessions."
+      ],
+      "location": "Brisbane, Australia"
+    }
+  ],
+  "experience": [
+    {
+      "dates": "Jun 2022–Apr 2024",
+      "title": "HMI Designer",
+      "institution": "SAIC Volkswagen",
+      "details": "Interaction and user experience design for automotive interfaces."
+    },
+    {
+      "dates": "Aug–Dec 2021",
+      "title": "UX Designer",
+      "institution": "ByteDance",
+      "details": "Interaction design for business products and advertising workflows."
+    },
+    {
+      "dates": "Jun–Aug 2021",
+      "title": "UX Designer",
+      "institution": "DiDi Global",
+      "details": "User research, interaction design, and competitive analysis for mobility services."
+    }
+  ]
+}

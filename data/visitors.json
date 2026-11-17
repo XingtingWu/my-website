@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "source": "https://mapmyvisitors.com/web/1c8cg",
+  "updated_at": "2026-11-17T04:10:39+00:00",
+  "period_start": "2026-01-01",
+  "period_end": "2026-12-31",
+  "countries": [
+    {
+      "code": "AU",
+      "name": "Australia",
+      "visits": 163
+    },
+    {
+      "code": "IE",
+      "name": "Ireland",
+      "visits": 15
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "visits": 6
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "visits": 4
+    }
+  ]
+}
