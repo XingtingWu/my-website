@@ -212,8 +212,10 @@ not unique people or all pageviews across the website.
 After publication to `main`, `.github/workflows/visitor-locations.yml` runs on a
 15-minute schedule (subject to GitHub scheduling delays). It updates only
 `data/visitors.json` on a separate `visitor-data` branch using the repository's
-standard Actions token. This does not change the Pages deployment branch or
-require a new API secret. The production page reads that JSON through GitHub's
+standard Actions token. `vercel.json` disables deployments for `visitor-data`
+only, so counter refreshes do not trigger repeated site builds. Other branches
+retain normal Vercel deployments. No new API secret is required. The production
+page reads that JSON through GitHub's
 raw-file host every five minutes while visible; caching can add a delay.
 
 The workflow has been prepared locally and has not yet run on GitHub. Confirm
