@@ -1,13 +1,4 @@
 'use strict';
-// Preserve the previous contact URL now that contact has its own page.
-const redirectLegacyContact = () => {
-  if (document.body.classList.contains('page-about') && window.location.hash === '#contact') {
-    window.location.replace(new URL('contact.html', window.location.href).href);
-  }
-};
-redirectLegacyContact();
-window.addEventListener('hashchange', redirectLegacyContact);
-
 // Link the map and its text descriptions for pointer and keyboard exploration.
 const researchOverview = document.querySelector('.landscape-overview');
 if (researchOverview) {
@@ -73,14 +64,106 @@ if (methodsExplorer) {
   tabList.hidden = false;
 }
 
-const visitorMapImage = document.querySelector('#visitor-map-image');
-if (visitorMapImage) {
-  const showMapFailure = () => {
-    visitorMapImage.hidden = true;
-    document.querySelector('#visitor-map-unavailable').hidden = false;
+const visitorLocations = document.querySelector('[data-visitor-locations]');
+if (visitorLocations) {
+  const production = ['www.xingtingwu.com', 'xingtingwu.com', 'xingtingwu.github.io'].includes(location.hostname);
+  const feed = production
+    ? 'https://raw.githubusercontent.com/XingtingWu/my-website/visitor-data/data/visitors.json'
+    : 'data/visitors.json';
+  const positions = JSON.parse(document.querySelector('#visitor-country-positions').textContent);
+  let visitorData = JSON.parse(document.querySelector('#visitor-initial-data').textContent);
+  const choice = visitorLocations.querySelector('#visitor-country-choice');
+  const pins = visitorLocations.querySelector('.visitor-pins');
+  const updated = visitorLocations.querySelector('.visitor-updated');
+  const ns = 'http://www.w3.org/2000/svg';
+  let activeCode = choice.value;
+  const showTime = (iso, fallback = false) => {
+    const date = new Date(iso);
+    if (Number.isNaN(date.getTime())) return;
+    const time = document.createElement('time');
+    time.dateTime = iso;
+    time.textContent = new Intl.DateTimeFormat('en', {dateStyle: 'medium', timeStyle: 'short'}).format(date);
+    updated.replaceChildren(document.createTextNode(fallback ? 'Last available update ' : 'Updated '), time);
   };
-  visitorMapImage.addEventListener('error', showMapFailure);
-  if (visitorMapImage.complete && visitorMapImage.naturalWidth === 0) showMapFailure();
+  const selectCountry = code => {
+    const country = visitorData.countries.find(c => c.code === code);
+    if (!country) return;
+    activeCode = code;
+    choice.value = code;
+    pins.querySelectorAll('[data-country-code]').forEach(pin => {
+      const selected = pin.dataset.countryCode === code;
+      pin.classList.toggle('is-active', selected);
+      pin.setAttribute('aria-pressed', String(selected));
+    });
+    visitorLocations.querySelector('.visitor-selection strong').textContent = country.visits.toLocaleString('en');
+  };
+  const bindPins = () => pins.querySelectorAll('[data-country-code]').forEach(pin => {
+    const select = () => selectCountry(pin.dataset.countryCode);
+    pin.addEventListener('pointerenter', select);
+    pin.addEventListener('focus', select);
+    pin.addEventListener('click', select);
+    pin.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); select(); }
+    });
+  });
+  const renderMap = data => {
+    visitorData = data;
+    const options = data.countries.map(c => {
+      const option = document.createElement('option');
+      option.value = c.code; option.textContent = c.name; return option;
+    });
+    choice.replaceChildren(...options);
+    const markers = data.countries.filter(c => positions[c.code]).map(c => {
+      const [x, y] = positions[c.code];
+      const pin = document.createElementNS(ns, 'g');
+      pin.setAttribute('class', 'visitor-pin');
+      pin.setAttribute('transform', `translate(${x} ${y})`);
+      pin.dataset.countryCode = c.code;
+      pin.setAttribute('role', 'button'); pin.setAttribute('tabindex', '0');
+      pin.setAttribute('aria-label', `${c.name}: ${c.visits.toLocaleString('en')} recorded visits`);
+      for (const [className, radius] of [['pin-target', 30], ['pin-halo', 14], ['pin-dot', 5]]) {
+        const circle = document.createElementNS(ns, 'circle');
+        circle.setAttribute('class', className); circle.setAttribute('r', radius); pin.append(circle);
+      }
+      const label = document.createElementNS(ns, 'text');
+      label.setAttribute('x', '15'); label.setAttribute('y', '5'); label.textContent = c.name; pin.append(label);
+      return pin;
+    });
+    pins.replaceChildren(...markers);
+    bindPins();
+    selectCountry(data.countries.some(c => c.code === activeCode) ? activeCode : data.countries[0].code);
+    visitorLocations.querySelector('.visitor-period').textContent = data.period_start.slice(0, 4);
+    showTime(data.updated_at);
+  };
+  bindPins();
+  choice.addEventListener('change', () => selectCountry(choice.value));
+  showTime(visitorData.updated_at);
+  const refreshLocations = async () => {
+    if (document.hidden) return;
+    try {
+      const response = await fetch(feed, {cache: 'no-store', signal: AbortSignal.timeout(10000)});
+      if (!response.ok) throw new Error('Visitor feed unavailable');
+      const data = await response.json();
+      if (data.schema_version !== 1 || !Array.isArray(data.countries) || !data.countries.length ||
+          Number.isNaN(Date.parse(data.updated_at)) || !/^\d{4}-\d{2}-\d{2}$/.test(data.period_start) ||
+          !data.countries.every(c => typeof c.name === 'string' && c.name.length <= 80 && /^[A-Z]{2}$/.test(c.code) &&
+            Number.isSafeInteger(c.visits) && c.visits >= 0)) throw new Error('Invalid visitor feed');
+      renderMap(data);
+    } catch {
+      showTime(updated.querySelector('time').dateTime, true);
+    }
+  };
+  refreshLocations();
+  setInterval(refreshLocations, 5 * 60 * 1000);
+  // Keep the existing counter on Contact only. Local previews never record visits.
+  if (production) {
+    const counter = new Image(1, 1);
+    counter.alt = '';
+    counter.hidden = true;
+    counter.referrerPolicy = 'origin';
+    counter.src = 'https://mapmyvisitors.com/map.png?cl=c2cfb6&w=900&t=n&d=ZteC6Fab8depnYwiaWMsptE8t1EYXOeIAhAFBdEGdp8&co=f1f2e9&ct=243e34';
+    visitorLocations.append(counter);
+  }
 }
 
 const menuButton = document.querySelector('.menu-toggle');
