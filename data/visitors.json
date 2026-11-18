@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "source": "https://mapmyvisitors.com/web/1c8cg",
-  "updated_at": "2026-11-18T03:44:29+00:00",
+  "updated_at": "2026-11-18T12:20:34+00:00",
   "period_start": "2026-01-01",
   "period_end": "2026-12-31",
   "countries": [
     {
       "code": "AU",
       "name": "Australia",
-      "visits": 166
+      "visits": 167
     },
     {
       "code": "IE",
