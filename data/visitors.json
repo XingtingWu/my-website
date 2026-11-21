@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "https://mapmyvisitors.com/web/1c8cg",
-  "updated_at": "2026-11-21T04:01:59+00:00",
+  "updated_at": "2026-11-21T12:30:09+00:00",
   "period_start": "2026-01-01",
   "period_end": "2026-12-31",
   "countries": [
@@ -13,7 +13,7 @@
     {
       "code": "IE",
       "name": "Ireland",
-      "visits": 17
+      "visits": 18
     },
     {
       "code": "US",
